@@ -121,6 +121,3 @@ npm run validate   # 問題データ（public/questions.json）の検証
 └── .github/workflows/deploy.yml
 ```
 
-## 旧 Streamlit 版について
-
-以前の Streamlit（Python）版は、Git のタグ `streamlit-final` に残っています。移行の確認が終わるまでは、`app.py` などの Python のファイルもリポジトリに残しています（確認後に削除予定）。
