@@ -15,8 +15,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
@@ -24,15 +24,16 @@ jobs:
       - run: npm test
       - run: npm run validate
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
-        if: github.ref == 'refs/heads/main'
+      - uses: actions/upload-pages-artifact@v5
+        if: github.ref == 'refs/heads/main' && !github.event.repository.private
         with:
           path: dist
 
   # main への push（または手動実行）のときだけ GitHub Pages に公開する。
-  # Pages はリポジトリを Public にし、Settings > Pages の Source を「GitHub Actions」にしてから有効になる。
+  # 無料プランでは Private のリポジトリから Pages を公開できないため、Private の間はスキップする。
+  # Public にしたうえで、Settings > Pages の Source を「GitHub Actions」にすると公開される。
   deploy:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && !github.event.repository.private
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -43,4 +44,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

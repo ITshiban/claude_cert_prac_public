@@ -86,11 +86,11 @@ npm run validate   # 問題データ（public/questions.json）の検証
 `.github/workflows/deploy.yml` で、次のように動きます。
 
 - すべてのブランチへの push で `npm test` → `npm run validate` → `npm run build` を実行します
-- `main` への push（または Actions 画面からの手動実行）のときだけ、ビルド結果を GitHub Pages に公開します
+- `main` への push（または Actions 画面からの手動実行）のときだけ、ビルド結果を GitHub Pages に公開します。リポジトリが Private の間は、公開のジョブは自動でスキップされます
 
 初回だけ、GitHub で次の設定が必要です。
 
-1. リポジトリを Public にする（Settings > General > Danger Zone > Change visibility）。無料プランでは Private のリポジトリから Pages を公開できません。Private の間は、ワークフローのデプロイのジョブだけが失敗します
+1. リポジトリを Public にする（Settings > General > Danger Zone > Change visibility）。無料プランでは Private のリポジトリから Pages を公開できません
 2. Settings > Pages の Source を「GitHub Actions」にする
 3. `main` に push するか、Actions 画面から「Test, build and deploy」を手動実行する
 
