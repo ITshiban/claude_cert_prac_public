@@ -21,7 +21,7 @@
 ```
 ├── index.html
 ├── package.json             # scripts: dev / build / preview / test / validate / merge
-├── vite.config.js           # base: '/claude_cert_prac/'
+├── vite.config.js           # base: '/claude_cert_prac_public/'
 ├── public/questions.json    # 起動時に fetch で読み込む（merge で生成）
 ├── src/
 │   ├── main.jsx
@@ -117,7 +117,7 @@
 
 ## Phase 4：デプロイ設定と README
 
-1. `vite.config.js` の base を `/claude_cert_prac/` にする
+1. `vite.config.js` の base を `/claude_cert_prac_public/` にする
 2. `.github/workflows/deploy.yml`：main への push で test → validate → build → GitHub Pages にデプロイする
 3. `npm run build` と `npm run preview` で、base パス付きで動くことを確認する
 4. README.md を書き直す：ローカル起動、テスト、問題データの結合と検証、デプロイ手順（Public 移行後に Settings > Pages で Source を「GitHub Actions」にする）、ディレクトリ構成
@@ -137,4 +137,4 @@
 
 1. GitHub でリポジトリを Public にする（Settings > General > Danger Zone）
 2. Settings > Pages で Source を「GitHub Actions」にする
-3. main への push、またはワークフローの手動実行でデプロイし、`https://itshiban.github.io/claude_cert_prac/` で動作を確認する
+3. main への push、またはワークフローの手動実行でデプロイし、`https://itshiban.github.io/claude_cert_prac_public/` で動作を確認する

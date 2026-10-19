@@ -4,7 +4,7 @@ Claude Certified Associate – Foundations（CCAO-F）の練習用に作った�
 
 非公式の練習アプリであり、Anthropic とは関係ありません。問題の一部（Q001〜Q080）は Amey Thakur 氏の [CLAUDE-CERTIFICATIONS](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)（MIT License）に由来します。著作権表示とライセンス本文は [public/THIRD_PARTY_NOTICES.txt](public/THIRD_PARTY_NOTICES.txt) にあり、公開したサイトのフッターからも参照できます。
 
-公開URL（Public 化して GitHub Pages を有効にした後）：https://itshiban.github.io/claude_cert_prac/
+公開URL（Public 化して GitHub Pages を有効にした後）：https://itshiban.github.io/claude_cert_prac_public/
 
 ## 主な機能
 
@@ -32,7 +32,7 @@ npm install
 npm run dev
 ```
 
-http://localhost:5173/claude_cert_prac/ で開けます。
+http://localhost:5173/claude_cert_prac_public/ で開けます。
 
 同じ Wi-Fi のスマートフォンから確認したいときは、`npm run dev:lan` で起動し、表示される Network の URL を開きます。同じネットワーク内の誰でも開ける状態になるので、確認が終わったら止めてください。
 
@@ -94,14 +94,14 @@ npm run validate   # 問題データ（public/questions.json）の検証
 2. Settings > Pages の Source を「GitHub Actions」にする
 3. `main` に push するか、Actions 画面から「Test, build and deploy」を手動実行する
 
-リポジトリ名を変える場合は、`vite.config.js` の `base`（現在は `/claude_cert_prac/`）も同じ名前に変えてください。
+リポジトリ名を変える場合は、`vite.config.js` の `base`（現在は `/claude_cert_prac_public/`）も同じ名前に変えてください。
 
 ## ディレクトリ構成
 
 ```
 ├── index.html
 ├── package.json
-├── vite.config.js              # base: /claude_cert_prac/
+├── vite.config.js              # base: /claude_cert_prac_public/
 ├── public/questions.json       # アプリが読み込む問題データ（npm run merge で生成）
 ├── src/
 │   ├── main.jsx
