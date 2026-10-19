@@ -107,6 +107,35 @@ const TEXT = {
   reset_yes: { ja: "削除する", en: "Delete" },
   cancel: { ja: "キャンセル", en: "Cancel" },
   reset_done: { ja: "学習記録をリセットしました。", en: "Learning records have been reset." },
+
+  // 保存
+  storage_unavailable: {
+    ja: "このブラウザでは学習記録を保存できません（プライベートモードなど）。ページを閉じると記録は消えます。",
+    en: "Your records cannot be saved in this browser (for example, in private mode). They will be lost when you close the page.",
+  },
+  storage_corrupt: {
+    ja: "保存されていた学習記録を読み込めなかったため、初期状態で起動しました。",
+    en: "Your saved records could not be read, so the app started fresh.",
+  },
+  storage_newer: {
+    ja: "保存されていた学習記録は新しいバージョンのアプリで作られたため読み込めませんでした。初期状態で起動しました。",
+    en: "Your saved records were created by a newer version of the app and could not be read. The app started fresh.",
+  },
+  save_failed: {
+    ja: "学習記録を保存できませんでした。ブラウザの保存容量や設定を確認してください。",
+    en: "Your records could not be saved. Check your browser's storage settings.",
+  },
+  dismiss: { ja: "閉じる", en: "Dismiss" },
+  export_done: { ja: "{file} をダウンロードしました。", en: "Downloaded {file}." },
+  import_invalid: { ja: "このファイルは学習記録として読み込めません（形式が正しくありません）。", en: "This file cannot be imported (invalid format)." },
+  import_newer: { ja: "このファイルは新しいバージョンのアプリで作られたため読み込めません。", en: "This file was created by a newer version of the app and cannot be imported." },
+  import_read_error: { ja: "ファイルを読み込めませんでした。", en: "Could not read the file." },
+  import_confirm: {
+    ja: "{file} を読み込み、現在の学習記録を上書きします（回答履歴 {h} 件・ステータス {s} 問）。よろしいですか？",
+    en: "Import {file} and overwrite your current records ({h} answers, {s} statuses)?",
+  },
+  import_yes: { ja: "上書きする", en: "Overwrite" },
+  import_done: { ja: "学習記録を読み込みました。", en: "Records imported." },
 };
 
 /** 文言を返す。params の {name} を置き換える */

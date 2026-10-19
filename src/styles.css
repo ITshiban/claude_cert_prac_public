@@ -265,3 +265,6 @@ tfoot td { font-weight: 600; }
   nav button { padding: 8px 6px; font-size: 0.9rem; }
   th, td { padding: 6px; }
 }
+
+.storage-warning { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.storage-warning button { flex-shrink: 0; }

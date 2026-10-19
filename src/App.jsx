@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { t, tParts } from "./i18n.js";
-import { createSession, DOMAIN_IDS, filterQuestions, isCorrect, selectQuestions, SOURCE_GROUPS } from "./quiz.js";
+import { createSession, filterQuestions, isCorrect, selectQuestions } from "./quiz.js";
+import { dropUnknownSession, load, save } from "./storage.js";
 import Home from "./screens/Home.jsx";
 import Quiz from "./screens/Quiz.jsx";
 import Result from "./screens/Result.jsx";
@@ -12,22 +13,17 @@ const QUESTIONS_URL = `${import.meta.env.BASE_URL}questions.json`;
 
 const NAV = ["home", "list", "stats", "settings"];
 
-// 保存データと同じ形で状態を持つ（保存は Phase 3 で追加）
-function initialData() {
-  return {
-    schemaVersion: 1,
-    settings: { lang: "ja", count: 10, mode: "random", domains: DOMAIN_IDS, sources: SOURCE_GROUPS },
-    statuses: {},
-    history: [],
-    currentSession: null,
-  };
-}
+const isComplete = (s) => s !== null && s.answers.length === s.questionIds.length;
 
 export default function App() {
   const [questions, setQuestions] = useState(null);
   const [loadError, setLoadError] = useState(false);
-  const [data, setData] = useState(initialData);
-  const [page, setPage] = useState("home"); // home / quiz / result / list / stats / settings
+  // 保存データ（settings / statuses / history / currentSession）をそのまま状態として持つ
+  const [boot] = useState(() => load());
+  const [data, setData] = useState(boot.data);
+  const [storageWarning, setStorageWarning] = useState(boot.warning); // 読み込み・保存の注意
+  // 結果画面のまま閉じていた場合は結果画面から、それ以外はホームから始める
+  const [page, setPage] = useState(() => (isComplete(boot.data.currentSession) ? "result" : "home"));
   const [notice, setNotice] = useState(""); // 出題開始時のお知らせ（件数不足）
   const [warning, setWarning] = useState(""); // ホームの警告（該当0件）
 
@@ -41,9 +37,18 @@ export default function App() {
         if (!res.ok) throw new Error(res.statusText);
         return res.json();
       })
-      .then(setQuestions)
+      .then((qs) => {
+        setQuestions(qs);
+        const ids = new Set(qs.map((q) => q.id));
+        setData((d) => dropUnknownSession(d, ids));
+      })
       .catch(() => setLoadError(true));
   }, []);
+
+  // 状態が変わるたびに保存する（回答・ステータス変更・設定変更・クールの進行）
+  useEffect(() => {
+    if (!save(data) && boot.warning !== "unavailable") setStorageWarning("save_failed");
+  }, [data, boot.warning]);
 
   useEffect(() => {
     document.documentElement.lang = lang;
@@ -107,12 +112,18 @@ export default function App() {
     setData((d) => ({ ...d, statuses: { ...d.statuses, [id]: status } }));
   }
 
+  function importRecords(imported) {
+    const ids = new Set(questions.map((q) => q.id));
+    setData(dropUnknownSession(imported, ids));
+    setNotice("");
+  }
+
   function resetRecords() {
     update({ statuses: {}, history: [], currentSession: null });
     setNotice("");
   }
 
-  const inProgress = session && session.answers.length < session.questionIds.length ? session : null;
+  const inProgress = session && !isComplete(session) ? session : null;
 
   let content;
   if (loadError) content = <p className="notice warn">{t("load_error", lang)}</p>;
@@ -144,7 +155,10 @@ export default function App() {
   } else if (page === "stats") {
     content = <Stats lang={lang} questions={questions} statuses={data.statuses} history={data.history} />;
   } else if (page === "settings") {
-    content = <Settings lang={lang} onSetLang={(l) => setSettings({ ...data.settings, lang: l })} onReset={resetRecords} />;
+    content = (
+      <Settings lang={lang} data={data} onSetLang={(l) => setSettings({ ...data.settings, lang: l })}
+        onReset={resetRecords} onImport={importRecords} />
+    );
   } else {
     content = (
       <Home lang={lang} settings={data.settings} onChange={setSettings} onStart={start} warning={warning}
@@ -174,7 +188,15 @@ export default function App() {
           ))}
         </nav>
       </header>
-      <main>{content}</main>
+      <main>
+        {storageWarning && (
+          <div className="notice warn storage-warning">
+            <span>{t(storageWarning === "save_failed" ? "save_failed" : `storage_${storageWarning}`, lang)}</span>
+            <button type="button" className="link" onClick={() => setStorageWarning(null)}>{t("dismiss", lang)}</button>
+          </div>
+        )}
+        {content}
+      </main>
       <footer>
         {tParts("footer", lang, {
           link: (

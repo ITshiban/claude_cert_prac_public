@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "merge": "node scripts/merge-questions.mjs"
+    "merge": "node scripts/merge-questions.mjs",
+    "validate": "node scripts/validate-questions.mjs"
   },
   "dependencies": {
     "react": "^19.3.1",
