@@ -1,3 +1,5 @@
+> この文書は旧 Streamlit 版（タグ `streamlit-final`）の要件です。現在のアプリはブラウザ保存型の React 版に作り直しています（[rebuild-plan.md](rebuild-plan.md)、README を参照）。問題データの仕様（スキーマ・出典・ドメイン配分）は現在も有効です。
+
 # 依頼：Claude Certified Associate – Foundations 練習問題アプリの作成
 
 ## 目的

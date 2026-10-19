@@ -1,5 +1,7 @@
 # 進捗
 
+> Phase 1〜3 と「追加対応」は旧 Streamlit 版の記録です。現在は React 版（docs/rebuild-plan.md）に移行済みです。
+
 ## 決定事項
 - 選択肢は表示順をシャッフルし、上から 1〜4 の番号を振る。正誤判定は元の key で行う
 - 解説内の選択肢記号（`(B)` `(B, C)` `**B**`）は、表示時に表示番号へ置き換える
@@ -41,5 +43,11 @@
 - ニックネーム：profile テーブル（key/value）に1件保存。ホームで入力、サイドバーに表示。履歴の分離はしない（将来 answers/status にニックネーム列を追加して対応）。リセットしてもニックネームは残す
 - pytest 27件すべて成功
 
+## React 版への作り直し（docs/rebuild-plan.md）
+- Phase 0〜4 完了。Streamlit 版はタグ `streamlit-final` に保存
+- 公開：https://itshiban.github.io/claude_cert_prac_public/（リポジトリ ITshiban/claude_cert_prac_public、Public、GitHub Pages）
+- 公開前の対応：出典元の MIT License 表記（public/THIRD_PARTY_NOTICES.txt）、コミット履歴のメール・名前を匿名アドレスに書き換えてリポジトリを作り直し
+- Python 版を削除（app.py ほか、旧 data/questions.json）。スキルを react-conventions と npm run merge / validate の手順に書き換え
+
 ## 次にやること
-- すべてのフェーズが完了。コミットは未実施（指示待ち）
+- なし（問題を追加するときは quiz-question-writer → question-data-check の手順で）

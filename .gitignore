@@ -1,12 +1,6 @@
-# user data (SQLite)
-*.sqlite3
-*.db
-
-# Python
-.venv/
-__pycache__/
-.pytest_cache/
-
 # Node
 node_modules/
 dist/
+
+# 旧 Streamlit 版の学習記録（ローカルに残っている場合）
+*.sqlite3

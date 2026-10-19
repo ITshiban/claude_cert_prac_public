@@ -126,7 +126,7 @@
 **確認**：preview でサブパスの配信が動く。Actions の test・validate・build のジョブは Private のままでも通る
 **報告**：ワークフローの内容、確認結果。そのうえで `react-rebuild` を `main` にマージしてよいか確認する
 
-## 後日：Python 版の削除（新しいアプリの全機能を確認していただいてから）
+## 後日：Python 版の削除（新しいアプリの全機能を確認していただいてから）【完了】
 
 1. 削除するもの：`app.py` `quiz.py` `db.py` `i18n.py` `requirements.txt` `pytest.ini` `tests/*.py` `scripts/*.py` `data/questions.json` `.venv/`
 2. `.gitignore` を Node 向けに整理する

@@ -6,7 +6,7 @@ description: Claude Certified Associate – Foundations の練習問題を新規
 # 練習問題の作成ルール
 
 ## スキーマ
-- data/questions.json のスキーマに従う（docs/requirements.md 参照）
+- data/questions/ の出典別JSON（新しい独自問題は original.json）に追加し、スキーマは README の「問題の追加方法」に従う
 - source は original、source_url と source_number は null
 - question / choices / explanation は必ず en と ja の両方を持つ
 
