@@ -2,7 +2,7 @@
 
 Claude Certified Associate – Foundations（CCAO-F）の練習用に作った、1問1答形式の Web アプリです。日本語と英語に対応しています。ブラウザだけで動き、サーバーやデータベースは使いません。
 
-非公式の練習アプリであり、Anthropic とは関係ありません。問題の一部は Amey Thakur 氏の [CLAUDE-CERTIFICATIONS](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)（MIT License）に由来します。
+非公式の練習アプリであり、Anthropic とは関係ありません。問題の一部（Q001〜Q080）は Amey Thakur 氏の [CLAUDE-CERTIFICATIONS](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)（MIT License）に由来します。著作権表示とライセンス本文は [public/THIRD_PARTY_NOTICES.txt](public/THIRD_PARTY_NOTICES.txt) にあり、公開したサイトのフッターからも参照できます。
 
 公開URL（Public 化して GitHub Pages を有効にした後）：https://itshiban.github.io/claude_cert_prac/
 

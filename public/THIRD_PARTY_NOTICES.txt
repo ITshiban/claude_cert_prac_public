@@ -1,0 +1,51 @@
+Third-party notices / 第三者の著作物について
+============================================
+
+This app includes practice questions from CLAUDE-CERTIFICATIONS by Amey Thakur.
+本アプリには、Amey Thakur 氏の CLAUDE-CERTIFICATIONS に含まれる練習問題が含まれています。
+
+Source / 出典: https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS (associate-foundations)
+
+Included material / 含まれるもの:
+- data/questions/practice.json (Q001-Q035): practice-questions.md, questions 1-35
+- data/questions/mock1.json (Q036-Q050): mock-exam-1.md, questions 1-15
+- data/questions/mock2.json (Q051-Q065): mock-exam-2.md, questions 1-15
+- data/questions/mock3.json (Q066-Q080): mock-exam-3.md, questions 1-15
+- public/questions.json (the merged file served by the app / アプリが読み込む結合済みファイル)
+
+Modifications / 変更点:
+- Japanese translations were added. The English question text, choices, and answers are unchanged.
+  日本語訳を追加しました。英語の問題文・選択肢・正解は変更していません。
+- For mock exams, explanations for some incorrect choices were added, marked with
+  "[Supplement]" / "【補足】".
+  模擬試験の一部の問題に、誤答の説明を補足として追加しました（"[Supplement]" / "【補足】" と表示）。
+
+Questions Q081-Q100 (data/questions/original.json) are original to this app.
+Q081〜Q100（data/questions/original.json）は本アプリ独自の問題です。
+
+This app is an unofficial practice tool and is not affiliated with Anthropic.
+本アプリは非公式の練習用アプリであり、Anthropic とは関係ありません。
+
+------------------------------------------------------------------------------
+
+MIT License
+
+Copyright (c) 2026 Amey Thakur
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -13,6 +13,7 @@ const TEXT = {
     ja: "本アプリは非公式の練習用アプリであり、Anthropic とは関係ありません。問題の一部は Amey Thakur 氏の {link}（MIT License）に由来します。",
     en: "This is an unofficial practice app, not affiliated with Anthropic. Some questions come from Amey Thakur's {link} (MIT License).",
   },
+  notices: { ja: "ライセンス表記", en: "License notices" },
   loading: { ja: "問題データを読み込んでいます…", en: "Loading questions…" },
   load_error: { ja: "問題データを読み込めませんでした。ページを再読み込みしてください。", en: "Could not load the questions. Please reload the page." },
   domain: { ja: "ドメイン", en: "Domain" },

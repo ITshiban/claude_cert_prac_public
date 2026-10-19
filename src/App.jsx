@@ -204,7 +204,10 @@ export default function App() {
               CLAUDE-CERTIFICATIONS
             </a>
           ),
-        })}
+        })}{" "}
+        <a href={`${import.meta.env.BASE_URL}THIRD_PARTY_NOTICES.txt`} target="_blank" rel="noreferrer">
+          {t("notices", lang)}
+        </a>
       </footer>
     </div>
   );
