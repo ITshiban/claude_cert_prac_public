@@ -1,20 +1,22 @@
 import { t } from "../i18n.js";
 import { COUNTS, DOMAIN_IDS, MODES, SOURCE_GROUPS } from "../quiz.js";
-import { domainLabel } from "../components.jsx";
+import { CheckGroup, domainLabel, sourceGroupLabel } from "../components.jsx";
 
-function toggle(list, value) {
-  return list.includes(value) ? list.filter((v) => v !== value) : [...list, value].sort();
-}
-
-function sourceGroupLabel(g, lang) {
-  return g === "original" ? t("source_original", lang) : t(`source_${g}`, lang);
-}
-
-export default function Home({ lang, settings, onChange, onStart, warning }) {
+export default function Home({ lang, settings, onChange, onStart, warning, session, onResume, onDiscard }) {
   const set = (patch) => onChange({ ...settings, ...patch });
 
   return (
     <section>
+      {session && (
+        <div className="notice info resume">
+          <p>{t("session_in_progress", lang, { i: Math.min(session.index + 1, session.questionIds.length), n: session.questionIds.length })}</p>
+          <div className="row">
+            <button type="button" className="primary" onClick={onResume}>{t("resume", lang)}</button>
+            <button type="button" className="secondary" onClick={onDiscard}>{t("discard", lang)}</button>
+          </div>
+        </div>
+      )}
+
       <fieldset>
         <legend>{t("count", lang)}</legend>
         <div className="options inline">
@@ -39,33 +41,26 @@ export default function Home({ lang, settings, onChange, onStart, warning }) {
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend>{t("filter_domain", lang)}</legend>
-        <div className="options">
-          {DOMAIN_IDS.map((d) => (
-            <label key={d}>
-              <input type="checkbox" checked={settings.domains.includes(d)} onChange={() => set({ domains: toggle(settings.domains, d) })} />
-              {domainLabel(d)}
-            </label>
-          ))}
-        </div>
-        <div className="row">
-          <button type="button" className="link" onClick={() => set({ domains: DOMAIN_IDS })}>{t("select_all", lang)}</button>
-          <button type="button" className="link" onClick={() => set({ domains: [] })}>{t("clear_all", lang)}</button>
-        </div>
-      </fieldset>
+      <CheckGroup
+        legend={t("filter_domain", lang)}
+        options={DOMAIN_IDS}
+        selected={settings.domains}
+        onChange={(domains) => set({ domains })}
+        format={domainLabel}
+      />
+      <div className="row under-fieldset">
+        <button type="button" className="link" onClick={() => set({ domains: DOMAIN_IDS })}>{t("select_all", lang)}</button>
+        <button type="button" className="link" onClick={() => set({ domains: [] })}>{t("clear_all", lang)}</button>
+      </div>
 
-      <fieldset>
-        <legend>{t("filter_source", lang)}</legend>
-        <div className="options inline">
-          {SOURCE_GROUPS.map((g) => (
-            <label key={g}>
-              <input type="checkbox" checked={settings.sources.includes(g)} onChange={() => set({ sources: toggle(settings.sources, g) })} />
-              {sourceGroupLabel(g, lang)}
-            </label>
-          ))}
-        </div>
-      </fieldset>
+      <CheckGroup
+        legend={t("filter_source", lang)}
+        options={SOURCE_GROUPS}
+        selected={settings.sources}
+        onChange={(sources) => set({ sources })}
+        format={(g) => sourceGroupLabel(g, lang)}
+        inline
+      />
 
       {warning && <p className="notice warn">{warning}</p>}
       <button type="button" className="primary" onClick={onStart}>{t("start", lang)}</button>

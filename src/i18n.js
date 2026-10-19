@@ -68,6 +68,45 @@ const TEXT = {
   score: { ja: "{c} / {n} 問正解（正答率 {p}%）", en: "{c} of {n} correct ({p}%)" },
   review: { ja: "復習", en: "Review" },
   change_status: { ja: "ステータスを変更", en: "Change status" },
+  review_hint: { ja: "各問題を開くと、選択肢・解説の確認とステータスの変更ができます。", en: "Open each question to see the choices and explanation, and to change its status." },
+
+  // 進行中のクール
+  session_in_progress: { ja: "進行中のクールがあります（{i} / {n} 問）。", en: "You have a quiz in progress ({i} of {n})." },
+  resume: { ja: "続きから再開", en: "Resume" },
+  discard: { ja: "破棄して新しく始める", en: "Discard and start over" },
+
+  // 問題一覧
+  list_title: { ja: "問題一覧", en: "Question list" },
+  list_count: { ja: "{n} 問", en: "{n} questions" },
+  no_match: { ja: "条件に合う問題はありません。", en: "No questions match." },
+
+  // 成績
+  stats_title: { ja: "成績", en: "Stats" },
+  by_domain: { ja: "ドメイン別の正答率（全回答が対象）", en: "Accuracy by domain (all answers)" },
+  answers_n: { ja: "回答数", en: "Answers" },
+  correct_n: { ja: "正解数", en: "Correct" },
+  accuracy: { ja: "正答率", en: "Accuracy" },
+  total: { ja: "合計", en: "Total" },
+  by_status: { ja: "ステータス別の問題数", en: "Questions by status" },
+  count_n: { ja: "問題数", en: "Questions" },
+  no_history: { ja: "まだ回答履歴がありません。", en: "No answers yet." },
+
+  // 設定
+  settings_title: { ja: "設定", en: "Settings" },
+  storage_title: { ja: "学習記録", en: "Learning records" },
+  storage_note: {
+    ja: "記録はこのブラウザにだけ保存されます。ブラウザのデータを削除すると消えるため、必要に応じてエクスポートしてください。",
+    en: "Your records are saved only in this browser. Clearing browser data deletes them, so export them when needed.",
+  },
+  export: { ja: "エクスポート", en: "Export" },
+  import: { ja: "インポート", en: "Import" },
+  reset_title: { ja: "学習記録のリセット", en: "Reset learning records" },
+  reset_warning: { ja: "回答履歴・すべてのステータス・進行中のクールを削除します。元に戻せません。", en: "This deletes all answer history, statuses, and any quiz in progress. This cannot be undone." },
+  reset_button: { ja: "リセットする", en: "Reset" },
+  reset_confirm: { ja: "本当に削除しますか？", en: "Delete everything?" },
+  reset_yes: { ja: "削除する", en: "Delete" },
+  cancel: { ja: "キャンセル", en: "Cancel" },
+  reset_done: { ja: "学習記録をリセットしました。", en: "Learning records have been reset." },
 };
 
 /** 文言を返す。params の {name} を置き換える */

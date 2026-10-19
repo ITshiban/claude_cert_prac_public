@@ -1,6 +1,6 @@
 // 複数の画面で使う小さな部品
 import { t } from "./i18n.js";
-import { DOMAINS } from "./quiz.js";
+import { DOMAINS, STATUSES } from "./quiz.js";
 
 /** 問題文・解説の表示。空行で段落を分け、**x** を太字にする */
 export function RichText({ text }) {
@@ -25,6 +25,42 @@ export function SourceLabel({ question, lang }) {
     <a href={question.source_url} target="_blank" rel="noreferrer">
       {t("source_link", lang, { name, num: question.source_number })}
     </a>
+  );
+}
+
+export function sourceGroupLabel(g, lang) {
+  return g === "original" ? t("source_original", lang) : t(`source_${g}`, lang);
+}
+
+/** ステータスの選択欄 */
+export function StatusSelect({ lang, value, onChange, label }) {
+  return (
+    <label className="status-select">
+      <span>{label ?? t("status", lang)}</span>
+      <select value={value} onChange={(e) => onChange(e.target.value)}>
+        {STATUSES.map((s) => (
+          <option key={s} value={s}>{t(`status_${s}`, lang)}</option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+/** チェックボックスで複数選択する絞り込み */
+export function CheckGroup({ legend, options, selected, onChange, format, inline = false }) {
+  const toggle = (v) => onChange(selected.includes(v) ? selected.filter((x) => x !== v) : [...selected, v].sort());
+  return (
+    <fieldset>
+      <legend>{legend}</legend>
+      <div className={`options${inline ? " inline" : ""}`}>
+        {options.map((v) => (
+          <label key={v}>
+            <input type="checkbox" checked={selected.includes(v)} onChange={() => toggle(v)} />
+            {format(v)}
+          </label>
+        ))}
+      </div>
+    </fieldset>
   );
 }
 

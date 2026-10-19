@@ -4,8 +4,13 @@ import { createSession, DOMAIN_IDS, filterQuestions, isCorrect, selectQuestions,
 import Home from "./screens/Home.jsx";
 import Quiz from "./screens/Quiz.jsx";
 import Result from "./screens/Result.jsx";
+import List from "./screens/List.jsx";
+import Stats from "./screens/Stats.jsx";
+import Settings from "./screens/Settings.jsx";
 
 const QUESTIONS_URL = `${import.meta.env.BASE_URL}questions.json`;
+
+const NAV = ["home", "list", "stats", "settings"];
 
 // 保存データと同じ形で状態を持つ（保存は Phase 3 で追加）
 function initialData() {
@@ -22,7 +27,7 @@ export default function App() {
   const [questions, setQuestions] = useState(null);
   const [loadError, setLoadError] = useState(false);
   const [data, setData] = useState(initialData);
-  const [page, setPage] = useState("home"); // home / quiz / result
+  const [page, setPage] = useState("home"); // home / quiz / result / list / stats / settings
   const [notice, setNotice] = useState(""); // 出題開始時のお知らせ（件数不足）
   const [warning, setWarning] = useState(""); // ホームの警告（該当0件）
 
@@ -83,11 +88,31 @@ export default function App() {
     update({ currentSession: { ...session, index: session.index + 1 } });
   }
 
-  function finish() {
+  // 画面を移る。結果画面から離れるときは、終わったクールを片付ける
+  function navigate(to) {
+    if (page === "result") {
+      update({ currentSession: null });
+      setNotice("");
+    }
+    setWarning("");
+    setPage(to);
+  }
+
+  function discardSession() {
     update({ currentSession: null });
     setNotice("");
-    setPage("home");
   }
+
+  function setStatus(id, status) {
+    setData((d) => ({ ...d, statuses: { ...d.statuses, [id]: status } }));
+  }
+
+  function resetRecords() {
+    update({ statuses: {}, history: [], currentSession: null });
+    setNotice("");
+  }
+
+  const inProgress = session && session.answers.length < session.questionIds.length ? session : null;
 
   let content;
   if (loadError) content = <p className="notice warn">{t("load_error", lang)}</p>;
@@ -106,13 +131,25 @@ export default function App() {
         notice={notice}
         onSubmit={submit}
         onNext={next}
-        onQuit={() => setPage("home")}
+        onQuit={() => navigate("home")}
       />
     );
   } else if (page === "result" && session) {
-    content = <Result lang={lang} session={session} onHome={finish} />;
+    content = (
+      <Result lang={lang} session={session} byId={byId} statuses={data.statuses} onSetStatus={setStatus}
+        onHome={() => navigate("home")} />
+    );
+  } else if (page === "list") {
+    content = <List lang={lang} questions={questions} statuses={data.statuses} onSetStatus={setStatus} />;
+  } else if (page === "stats") {
+    content = <Stats lang={lang} questions={questions} statuses={data.statuses} history={data.history} />;
+  } else if (page === "settings") {
+    content = <Settings lang={lang} onSetLang={(l) => setSettings({ ...data.settings, lang: l })} onReset={resetRecords} />;
   } else {
-    content = <Home lang={lang} settings={data.settings} onChange={setSettings} onStart={start} warning={warning} />;
+    content = (
+      <Home lang={lang} settings={data.settings} onChange={setSettings} onStart={start} warning={warning}
+        session={inProgress} onResume={() => setPage("quiz")} onDiscard={discardSession} />
+    );
   }
 
   return (
@@ -129,6 +166,13 @@ export default function App() {
             </button>
           ))}
         </div>
+        <nav>
+          {NAV.map((p) => (
+            <button key={p} type="button" className={page === p ? "active" : ""} onClick={() => navigate(p)}>
+              {t(`page_${p}`, lang)}
+            </button>
+          ))}
+        </nav>
       </header>
       <main>{content}</main>
       <footer>
