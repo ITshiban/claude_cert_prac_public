@@ -1,0 +1,617 @@
+[
+  {
+    "id": "Q051",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 1,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude returns a policy answer that matches your expectation exactly, with no citation. What does the match tell you?",
+      "ja": "Claude が、あなたの予想とぴったり一致する社内規程についての回答を、引用なしで返しました。この一致は何を意味しますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The answer is confirmed, since it agrees with your understanding",
+        "ja": "自分の理解と一致しているので、回答は確認済みである"
+      },
+      {
+        "key": "B",
+        "en": "The answer is probably correct but should be reworded",
+        "ja": "回答はおそらく正しいが、言い回しを変えるべきである"
+      },
+      {
+        "key": "C",
+        "en": "Nothing about accuracy, because agreement with an expectation is not evidence",
+        "ja": "正確さについては何も意味しない。予想と一致することは証拠ではないから"
+      },
+      {
+        "key": "D",
+        "en": "The model has read the policy document",
+        "ja": "モデルが規程の文書を読んでいる"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Agreement with what you already believed is the easiest error to miss, since nothing prompts a check. Neither confirmation (A), rewording (B), nor an assumption about retrieval (D) establishes that the claim is true",
+      "ja": "すでに信じていたことと一致する誤りは、確認するきっかけがないため、最も見逃しやすい誤りです。確認済みとみなすこと (A)、言い回しを変えること (B)、情報を取得したはずだという思い込み (D) のいずれも、主張が正しいことを立証しません。"
+    }
+  },
+  {
+    "id": "Q052",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 2,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "A colleague asks Claude to check its own earlier answer, and it confirms the answer. How much weight does the confirmation carry?",
+      "ja": "同僚が Claude に以前の自分の回答を確認させたところ、Claude はその回答が正しいと確認しました。この確認にはどの程度の重みがありますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "None on its own, because the check is not independent of the thing being checked",
+        "ja": "それだけでは重みはない。確認が、確認される対象から独立していないから"
+      },
+      {
+        "key": "B",
+        "en": "Substantial, because the model reviewed its own reasoning",
+        "ja": "大きい。モデルが自分の推論を見直したから"
+      },
+      {
+        "key": "C",
+        "en": "Substantial if the confirmation is detailed",
+        "ja": "確認の内容が詳細なら大きい"
+      },
+      {
+        "key": "D",
+        "en": "It depends on the model used",
+        "ja": "使ったモデルによる"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Self-review is not an independent source and cannot establish correctness. Detail (C) and model choice (D) do not make a self-check independent",
+      "ja": "自己レビューは独立した情報源ではなく、正しさを立証できません。詳細さ (C) やモデルの選択 (D) によって、自己チェックが独立したものになるわけではありません。"
+    }
+  },
+  {
+    "id": "Q053",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 3,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "A report drafted with Claude contains one figure you cannot verify from any available source. What is the appropriate handling before circulation?",
+      "ja": "Claude を使って作成したレポートに、入手できるどの情報源でも検証できない数値が1つ含まれています。回覧する前の適切な扱い方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Circulate it with a general disclaimer about AI assistance",
+        "ja": "AI の支援を受けた旨の一般的な注意書きを付けて回覧する"
+      },
+      {
+        "key": "B",
+        "en": "Keep the figure and mark it as an estimate",
+        "ja": "数値を残し、推定値であると明記する"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude to provide a source and keep whatever it returns",
+        "ja": "Claude に出典を示させ、返ってきたものをそのまま残す"
+      },
+      {
+        "key": "D",
+        "en": "Remove the figure and note that it could not be verified",
+        "ja": "数値を削除し、検証できなかったことを注記する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "An unverifiable claim should not be presented as fact, and a labeled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification",
+      "ja": "検証できない主張を事実として示すべきではなく、欠落であることを明示するのが誠実な対応です。包括的な注意書き (A) はその数値に対処しておらず、根拠のない推定値 (B) は数値の性質を偽ります。求めに応じて出された引用 (C) にも同じ検証が必要です。"
+    }
+  },
+  {
+    "id": "Q054",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 4,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "Which of these is the strongest candidate to hand to Claude in a monthly close process?",
+      "ja": "月次決算のプロセスで、Claude に任せる候補として最も適しているのはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Approving the final journal entries",
+        "ja": "最終的な仕訳を承認する"
+      },
+      {
+        "key": "B",
+        "en": "Drafting the variance commentary from figures that are already agreed",
+        "ja": "合意済みの数値から差異についてのコメントを下書きする"
+      },
+      {
+        "key": "C",
+        "en": "Deciding which variances require investigation",
+        "ja": "どの差異を調査すべきかを決める"
+      },
+      {
+        "key": "D",
+        "en": "Signing off the reconciliation",
+        "ja": "照合結果を最終承認する"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Drafting from agreed inputs is bounded and checkable. Approval (A), sign-off (D), and the decision about what to investigate (C) all carry accountability",
+      "ja": "合意済みの入力からの下書きは、範囲が限定され、確認できるタスクです。承認 (A)、最終承認 (D)、何を調査するかの判断 (C) には、いずれも説明責任が伴います。"
+    }
+  },
+  {
+    "id": "Q055",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 5,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A workflow produces good output but nobody uses it. What should be examined first?",
+      "ja": "あるワークフローは良い出力を出しているのに、誰も使っていません。最初に何を確認すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Whether the model should be upgraded",
+        "ja": "モデルをアップグレードすべきかどうか"
+      },
+      {
+        "key": "B",
+        "en": "Whether the output arrives where the work actually happens, in a form people can act on",
+        "ja": "出力が、実際に作業が行われる場所に、人が行動に移せる形で届いているかどうか"
+      },
+      {
+        "key": "C",
+        "en": "Whether the prompt is long enough",
+        "ja": "プロンプトの長さが十分かどうか"
+      },
+      {
+        "key": "D",
+        "en": "Whether more people need training",
+        "ja": "より多くの人にトレーニングが必要かどうか"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Adoption usually fails on fit with the existing process rather than on output quality. Model (A) and prompt length (C) address quality that is already acceptable, and training (D) treats a symptom",
+      "ja": "定着しない原因は、たいてい出力の品質ではなく既存のプロセスとの適合にあります。モデル (A) やプロンプトの長さ (C) はすでに許容できている品質への対処であり、トレーニング (D) は症状への対処にすぎません。"
+    }
+  },
+  {
+    "id": "Q056",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 6,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "A team wants to paste anonymised customer feedback into Claude for theme analysis. What remains a risk after names are removed?",
+      "ja": "あるチームが、匿名化した顧客の声を Claude に貼り付けてテーマ分析をしたいと考えています。名前を削除したあとも残るリスクはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Nothing, since anonymisation removes the risk entirely",
+        "ja": "何もない。匿名化によってリスクは完全になくなる"
+      },
+      {
+        "key": "B",
+        "en": "The model may store the text permanently",
+        "ja": "モデルがテキストを恒久的に保存する可能性がある"
+      },
+      {
+        "key": "C",
+        "en": "Theme analysis is unreliable on anonymised data",
+        "ja": "匿名化したデータではテーマ分析の信頼性が低い"
+      },
+      {
+        "key": "D",
+        "en": "Free text can still identify people through specific details, so review before sending is still needed",
+        "ja": "自由記述は具体的な内容から個人を特定できる場合があるので、送る前の確認がなお必要である"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Removing names does not remove identifying detail from free text, which is why a review step remains. Treating anonymisation as complete (A) is the error tested, and neither storage assumptions (B) nor reliability (C) is the governance issue here",
+      "ja": "名前を削除しても、自由記述から個人を特定できる内容は取り除かれません。そのため確認の手順が残ります。匿名化で完了したとみなすこと (A) が問われている誤りであり、保存についての思い込み (B) も信頼性 (C) も、ここでのガバナンス上の論点ではありません。"
+    }
+  },
+  {
+    "id": "Q057",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 7,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Who should decide whether a Claude-assisted output is fit to send to a customer?",
+      "ja": "Claude の支援を受けて作成した出力を顧客に送ってよいかどうかは、誰が判断すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The person accountable for the customer relationship",
+        "ja": "その顧客との関係に説明責任を負う人"
+      },
+      {
+        "key": "B",
+        "en": "Whoever wrote the prompt",
+        "ja": "プロンプトを書いた人"
+      },
+      {
+        "key": "C",
+        "en": "The model, if asked to assess its own output",
+        "ja": "自分の出力を評価するよう求められたモデル"
+      },
+      {
+        "key": "D",
+        "en": "Nobody, if the workflow was approved in advance",
+        "ja": "ワークフローが事前に承認されていれば、誰も判断しなくてよい"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Accountability for the outgoing communication decides the question. Prompt authorship (B) is incidental, self-assessment (C) is not independent, and prior approval of a workflow (D) does not review this instance",
+      "ja": "送るコミュニケーションに対する説明責任が、この問いの答えを決めます。プロンプトを書いたかどうか (B) は付随的なことにすぎず、自己評価 (C) は独立していません。ワークフローの事前承認 (D) は、今回の個別の出力をレビューするものではありません。"
+    }
+  },
+  {
+    "id": "Q058",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 8,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "A prompt works well until the input document is much longer than usual, when quality drops. What is the most likely explanation?",
+      "ja": "あるプロンプトは、入力文書が通常よりもずっと長くなるまではうまく機能し、長くなると品質が落ちます。最も考えられる説明はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The model became less capable",
+        "ja": "モデルの能力が下がった"
+      },
+      {
+        "key": "B",
+        "en": "The prompt is too short",
+        "ja": "プロンプトが短すぎる"
+      },
+      {
+        "key": "C",
+        "en": "The relevant material is now competing with far more surrounding text",
+        "ja": "関連する情報が、はるかに多くの周辺のテキストと競合するようになった"
+      },
+      {
+        "key": "D",
+        "en": "Longer documents always produce worse output",
+        "ja": "長い文書は必ず出力が悪くなる"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Dilution across a much longer input is the usual cause of this pattern. The model has not changed (A), prompt length (B) is not the variable that changed, and length alone is not determinative (D)",
+      "ja": "はるかに長い入力の中で関連情報が薄まることが、このパターンのよくある原因です。モデルは変わっておらず (A)、プロンプトの長さ (B) は変化した要素ではありません。長さだけで結果が決まるわけでもありません (D)。"
+    }
+  },
+  {
+    "id": "Q059",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 9,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "You want the same analysis applied to fifty documents with consistent output. What matters most?",
+      "ja": "50件の文書に同じ分析を適用し、一貫した出力を得たいと考えています。最も重要なことはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Using the largest model available",
+        "ja": "利用できる最大のモデルを使う"
+      },
+      {
+        "key": "B",
+        "en": "Processing the documents in one conversation",
+        "ja": "1つの会話の中で文書を処理する"
+      },
+      {
+        "key": "C",
+        "en": "Reviewing only a sample of the outputs",
+        "ja": "出力の一部だけを抜き取りでレビューする"
+      },
+      {
+        "key": "D",
+        "en": "Fixing the prompt and the required output structure, and applying both unchanged to every document",
+        "ja": "プロンプトと求める出力の構造を固定し、両方をすべての文書に変えずに適用する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Consistency across a set comes from holding the instruction and the output shape constant. Model size (A) does not create consistency, one long conversation (B) invites drift, and sampling (C) is a review policy rather than a design",
+      "ja": "一連の出力の一貫性は、指示と出力の形を一定に保つことから生まれます。モデルの大きさ (A) は一貫性を生まず、1つの長い会話 (B) は出力のぶれを招きます。抜き取り確認 (C) はレビューの方針であって、設計ではありません。"
+    }
+  },
+  {
+    "id": "Q060",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 10,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "A task must return an answer within a second for an interactive interface, and the work is simple classification. What follows?",
+      "ja": "対話型のインターフェースのために、タスクは1秒以内に回答を返す必要があり、作業は単純な分類です。ここから導かれる結論はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Use the most capable model to be safe",
+        "ja": "念のため、最も高性能なモデルを使う"
+      },
+      {
+        "key": "B",
+        "en": "Batch the requests",
+        "ja": "リクエストをバッチ処理する"
+      },
+      {
+        "key": "C",
+        "en": "Use the smallest model that meets the accuracy requirement, since latency is the binding constraint",
+        "ja": "応答時間が制約となるので、精度の要件を満たす最も小さなモデルを使う"
+      },
+      {
+        "key": "D",
+        "en": "Increase the context supplied",
+        "ja": "与えるコンテキストを増やす"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "With a hard latency requirement and a simple task, the smallest sufficient model is the fit. The most capable model (A) spends latency for accuracy that is not needed, batching (B) breaks interactivity, and more context (D) adds cost and time",
+      "ja": "応答時間の厳しい要件があり、タスクが単純な場合は、要件を満たす最小のモデルが適しています。最も高性能なモデル (A) は不要な精度のために応答時間を費やし、バッチ処理 (B) は対話性を損ないます。コンテキストを増やす (D) と、コストと時間が増えます。"
+    }
+  },
+  {
+    "id": "Q061",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 11,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "What is the correct reading of a model's published benchmark score when choosing for a specific business task?",
+      "ja": "特定の業務タスクのためにモデルを選ぶとき、公開されているベンチマークのスコアの正しい読み方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "It predicts performance on your task",
+        "ja": "自分のタスクでの性能を予測するものである"
+      },
+      {
+        "key": "B",
+        "en": "It is a general signal that does not substitute for evaluating on your own task",
+        "ja": "一般的な目安であり、自分のタスクでの評価の代わりにはならない"
+      },
+      {
+        "key": "C",
+        "en": "It is irrelevant",
+        "ja": "無関係である"
+      },
+      {
+        "key": "D",
+        "en": "It determines the price you should expect to pay",
+        "ja": "支払うべき価格を決めるものである"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Benchmarks indicate general capability and cannot stand in for measurement on the actual task. Treating them as predictive (A) or irrelevant (C) are both wrong, and they do not set price (D)",
+      "ja": "ベンチマークは一般的な能力を示すもので、実際のタスクでの測定の代わりにはなりません。予測できるものとみなすこと (A) も無関係とみなすこと (C) も誤りであり、ベンチマークが価格を決めるわけでもありません (D)。"
+    }
+  },
+  {
+    "id": "Q062",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 12,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "Two teams keep separate copies of the same reference documents in their own projects. What is the main risk?",
+      "ja": "2つのチームが、同じ参考資料のコピーをそれぞれ自分たちの Project に別々に保持しています。主なリスクはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The copies drift apart, and the two teams begin answering the same question differently",
+        "ja": "コピーの内容がずれていき、2つのチームが同じ質問に違う答えを返すようになる"
+      },
+      {
+        "key": "B",
+        "en": "Higher storage cost",
+        "ja": "ストレージのコストが増える"
+      },
+      {
+        "key": "C",
+        "en": "Slower responses",
+        "ja": "応答が遅くなる"
+      },
+      {
+        "key": "D",
+        "en": "The model becomes confused between projects",
+        "ja": "モデルが Project 間で混乱する"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Duplicated knowledge diverges as each copy is maintained separately, producing inconsistent answers. Storage (B) and speed (C) are minor, and projects do not leak into one another (D)",
+      "ja": "重複したナレッジは、それぞれのコピーが別々に管理されるうちに食い違い、一貫しない回答を生みます。ストレージ (B) や速度 (C) は小さな問題であり、Project の内容がほかの Project に漏れることはありません (D)。"
+    }
+  },
+  {
+    "id": "Q063",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 13,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "What is the right first step when setting up a project for a recurring task?",
+      "ja": "繰り返し行うタスクのために Project を設定するとき、最初に行うべき適切な手順はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Decide what the task needs to know every time, and add only that",
+        "ja": "タスクで毎回知っておく必要があることを決め、それだけを追加する"
+      },
+      {
+        "key": "B",
+        "en": "Upload every document the team owns",
+        "ja": "チームが持つすべての文書をアップロードする"
+      },
+      {
+        "key": "C",
+        "en": "Write the longest possible instruction",
+        "ja": "できるだけ長い指示を書く"
+      },
+      {
+        "key": "D",
+        "en": "Add documents as questions come up, without review",
+        "ja": "質問が出るたびに、確認せずに文書を追加していく"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "A deliberate, minimal base keeps retrieval sharp and is maintainable. Uploading everything (B) and accumulating without review (D) both dilute, and instruction length (C) is not the question",
+      "ja": "意図して選んだ最小限の土台は、検索の精度を保ち、維持管理もしやすくなります。すべてをアップロードすること (B) も確認せずに蓄積すること (D) も情報を薄め、指示の長さ (C) はここでの論点ではありません。"
+    }
+  },
+  {
+    "id": "Q064",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 14,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "A user reports that Claude gave a wrong answer, but you cannot reproduce it. What is the most useful next step?",
+      "ja": "ユーザーから Claude が誤った回答をしたと報告がありましたが、あなたは再現できません。最も役に立つ次の手順はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Assume the user made an error",
+        "ja": "ユーザーの誤りだと考える"
+      },
+      {
+        "key": "B",
+        "en": "Obtain the exact prompt, inputs, and configuration they used",
+        "ja": "ユーザーが使った正確なプロンプト、入力、設定を入手する"
+      },
+      {
+        "key": "C",
+        "en": "Increase the model size for everyone",
+        "ja": "全員のモデルを大きくする"
+      },
+      {
+        "key": "D",
+        "en": "Add a warning to the interface",
+        "ja": "インターフェースに警告を追加する"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Reproduction depends on the exact conditions, and gathering them is the only way to diagnose. Dismissing the report (A) discards the signal, and a model change (C) or a warning (D) acts before the cause is known",
+      "ja": "再現できるかどうかは正確な条件しだいであり、それを集めることが診断する唯一の方法です。報告を退けること (A) はその手がかりを捨てることであり、モデルの変更 (C) や警告の追加 (D) は原因がわかる前に手を打つことです。"
+    }
+  },
+  {
+    "id": "Q065",
+    "source": "mock2",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-2.html",
+    "source_number": 15,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "Output quality varies between runs of an identical prompt on identical input. What does this indicate?",
+      "ja": "同じ入力に同じプロンプトを実行しても、実行ごとに出力の品質がばらつきます。これは何を示していますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The system is broken",
+        "ja": "システムが壊れている"
+      },
+      {
+        "key": "B",
+        "en": "The temperature must be zero for all tasks",
+        "ja": "すべてのタスクで temperature をゼロにしなければならない"
+      },
+      {
+        "key": "C",
+        "en": "Some variation is expected, and the task needs constraints tight enough that the variation does not matter",
+        "ja": "ある程度のばらつきは想定どおりであり、そのばらつきが問題にならないほど、タスクに厳しい制約を設ける必要がある"
+      },
+      {
+        "key": "D",
+        "en": "The input must be shortened",
+        "ja": "入力を短くしなければならない"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behavior, a universal temperature rule (B) is too blunt, and input length (D) is unrelated",
+      "ja": "生成は決定的ではないので、許容範囲内のばらつきに耐えられる設計にする必要があります。故障とみなすこと (A) は通常の振る舞いを読み違えており、temperature の一律のルール (B) は大雑把すぎます。入力の長さ (D) は無関係です。"
+    }
+  }
+]

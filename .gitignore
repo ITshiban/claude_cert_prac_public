@@ -1,0 +1,8 @@
+# user data (SQLite)
+*.sqlite3
+*.db
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/

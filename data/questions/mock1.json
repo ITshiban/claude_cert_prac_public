@@ -1,0 +1,617 @@
+[
+  {
+    "id": "Q036",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 1,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "A colleague shares a Claude-drafted policy summary that reads well and cites three internal documents by name. What is the appropriate review step before it circulates to the whole department?",
+      "ja": "同僚が、Claude が下書きした方針の要約を共有してきました。読みやすく、社内文書3件を名前で引用しています。部署全体に回覧する前に、適切なレビューの手順はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Circulate it, since the named sources demonstrate grounding",
+        "ja": "名前の挙がった情報源が根拠を示しているので、そのまま回覧する"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude to double-check its own work and circulate if it agrees",
+        "ja": "Claude に自分の作業を再確認させ、問題ないと答えれば回覧する"
+      },
+      {
+        "key": "C",
+        "en": "Confirm each named document exists and says what the summary claims",
+        "ja": "名前の挙がった各文書が実在し、要約が述べている内容が書かれているかを確認する"
+      },
+      {
+        "key": "D",
+        "en": "Add a disclaimer that the summary was AI-generated and circulate",
+        "ja": "AI が作成した要約である旨の注意書きを加えて回覧する"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Named sources can be fabricated; verification against the actual documents is the diligence step. Self-checking (B) is not independent evidence, and a disclaimer (D) does not make content correct\n\n[Supplement] Treating named sources as proof of grounding (A) is the very assumption that verification exists to test.",
+      "ja": "名前の挙がった情報源も捏造されている可能性があり、実際の文書と照らして検証することが必要な確認手順です。自己チェック (B) は独立した証拠ではなく、注意書き (D) を付けても内容が正しくなるわけではありません。\n\n【補足】名前の挙がった情報源を根拠の証明とみなすこと (A) は、まさに検証によって確かめるべき前提です。"
+    }
+  },
+  {
+    "id": "Q037",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 2,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "You need a first draft of a stakeholder update from a long project log. Which prompt is most likely to produce a usable draft on the first attempt?",
+      "ja": "長いプロジェクトログから、ステークホルダー向けの報告の初稿を作る必要があります。1回目で使える下書きを得られる可能性が最も高いプロンプトはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "\"Summarize this project log.\"",
+        "ja": "「このプロジェクトログを要約して。」"
+      },
+      {
+        "key": "B",
+        "en": "\"Write something good about this project log for my boss.\"",
+        "ja": "「上司向けに、このプロジェクトログについて何か良いものを書いて。」"
+      },
+      {
+        "key": "C",
+        "en": "\"Summarize this project log. Be detailed and thorough and professional.\"",
+        "ja": "「このプロジェクトログを要約して。詳細かつ徹底的に、プロフェッショナルに。」"
+      },
+      {
+        "key": "D",
+        "en": "\"You are writing a weekly update for non-technical executives. From the log, produce: status in one line, three progress items, two risks with owners, and next week's focus. Keep it under 200 words.\"",
+        "ja": "「あなたは技術者ではない経営陣向けの週次報告を書いています。ログから次の内容を作成してください：1行の状況、進捗3項目、担当者付きのリスク2つ、来週の重点事項。200語以内にまとめてください。」"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Role, audience, explicit structure, and length constraints are what turn a vague request into a usable draft. Intensifiers like \"detailed and thorough\" (C) add no structure\n\n[Supplement] A bare request (A) and a vague one aimed at \"my boss\" (B) leave the audience, structure, and length undefined.",
+      "ja": "役割、読み手、明示的な構成、長さの制約が、あいまいな依頼を使える下書きに変えます。「詳細かつ徹底的に」のような強調語 (C) は構造を加えません。\n\n【補足】そっけない依頼 (A) や「上司向け」のあいまいな依頼 (B) では、読み手、構成、長さが定義されていません。"
+    }
+  },
+  {
+    "id": "Q038",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 3,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "A workflow drafts hundreds of routine appointment confirmations each day. Latency and cost dominate; the language is formulaic. Which choice fits?",
+      "ja": "あるワークフローで、定型的な予約確認の文面を毎日何百件も作成しています。応答時間とコストが最重要で、文面は決まりきったものです。適切な選択はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "A fast, low-cost model, reserving a more capable one for exceptions",
+        "ja": "高速で低コストのモデルを使い、例外的なケースにはより高性能なモデルを充てる"
+      },
+      {
+        "key": "B",
+        "en": "The most capable model, for consistency",
+        "ja": "一貫性のため、最も高性能なモデルを使う"
+      },
+      {
+        "key": "C",
+        "en": "Whichever model is newest",
+        "ja": "最新のモデルならどれでもよい"
+      },
+      {
+        "key": "D",
+        "en": "Alternate between models to spread cost",
+        "ja": "コストを分散するため、モデルを交互に使う"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Match the model tier to the work: fast and cheap for formulaic volume, capable for exceptions\n\n[Supplement] The most capable model (B) spends cost and latency on formulaic text, newness (C) is not a fit criterion, and alternating models (D) matches nothing to the task.",
+      "ja": "モデルの階層を作業に合わせます。定型的な大量処理には高速で安価なモデルを、例外には高性能なモデルを使います。\n\n【補足】最も高性能なモデル (B) は定型文にコストと応答時間を費やし、新しさ (C) は適合性の基準になりません。モデルを交互に使う (D) のは、どのタスクにもモデルを合わせていません。"
+    }
+  },
+  {
+    "id": "Q039",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 4,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "Your team's Project answers questions from a product manual. Users report confident answers about a feature that was removed last quarter. What is the most likely cause?",
+      "ja": "チームの Project は、製品マニュアルをもとに質問に答えています。ユーザーから、前四半期に削除された機能について自信ありげな回答が返ってくると報告がありました。最も考えられる原因はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The model needs retraining",
+        "ja": "モデルの再学習が必要である"
+      },
+      {
+        "key": "B",
+        "en": "The Project's knowledge still contains the outdated manual",
+        "ja": "Project のナレッジに古いマニュアルが残っている"
+      },
+      {
+        "key": "C",
+        "en": "Users are asking the questions wrong",
+        "ja": "ユーザーの質問の仕方が間違っている"
+      },
+      {
+        "key": "D",
+        "en": "The context window is too small",
+        "ja": "コンテキストウィンドウが小さすぎる"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Project knowledge is maintained by you; stale documents produce confidently outdated answers\n\n[Supplement] The model does not need retraining to reflect your documents (A), users phrasing questions differently would not explain confident answers about a removed feature (C), and the context window (D) does not cause outdated content.",
+      "ja": "Project のナレッジは自分たちで維持管理するものであり、古い文書があると、自信ありげに古い回答が返ってきます。\n\n【補足】自社の文書を反映させるためにモデルを再学習させる必要はありません (A)。ユーザーの質問の仕方では、削除された機能についての自信ありげな回答は説明できず (C)、コンテキストウィンドウ (D) が古い内容の原因になることもありません。"
+    }
+  },
+  {
+    "id": "Q040",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 5,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Legal asks you to analyze a spreadsheet of support tickets containing customer names and email addresses. Your organization prohibits sending personal data to external tools. What do you do?",
+      "ja": "法務部から、顧客名とメールアドレスを含むサポートチケットのスプレッドシートを分析するよう依頼されました。あなたの組織では、個人データを外部ツールに送ることが禁止されています。どうしますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Upload it, since legal requested the analysis",
+        "ja": "法務部の依頼なので、アップロードする"
+      },
+      {
+        "key": "B",
+        "en": "Upload it and ask Claude to disregard the personal columns",
+        "ja": "アップロードし、個人情報の列は無視するよう Claude に依頼する"
+      },
+      {
+        "key": "C",
+        "en": "Strip or pseudonymize the personal columns, then analyze what remains",
+        "ja": "個人情報の列を削除するか仮名化してから、残りを分析する"
+      },
+      {
+        "key": "D",
+        "en": "Tell legal the analysis is not possible",
+        "ja": "分析はできないと法務部に伝える"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Make the task compliant, then do it. A requester's seniority does not override policy, and instructing the model to ignore data does not un-send it\n\n[Supplement] Telling legal the analysis is impossible (D) is unnecessary, since removing the personal data makes it compliant.",
+      "ja": "タスクをポリシーに準拠した形にしてから実行します。依頼者の立場はポリシーに優先せず、データを無視するようモデルに指示しても、送ってしまったデータは取り消せません。\n\n【補足】個人データを取り除けばポリシーに準拠できるので、分析できないと伝える (D) 必要はありません。"
+    }
+  },
+  {
+    "id": "Q041",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 6,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "Claude produces a five-paragraph answer when you needed three bullet points, twice in a row. What is the most effective adjustment?",
+      "ja": "3つの箇条書きが欲しかったのに、Claude が5段落の回答を2回続けて返してきました。最も効果的な調整はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Ask again and hope for variation",
+        "ja": "違う結果になることを期待して、もう一度頼む"
+      },
+      {
+        "key": "B",
+        "en": "Switch to a more capable model",
+        "ja": "より高性能なモデルに切り替える"
+      },
+      {
+        "key": "C",
+        "en": "Manually reformat each response",
+        "ja": "回答を毎回手作業で整形し直す"
+      },
+      {
+        "key": "D",
+        "en": "State the format explicitly, including the number of bullets and their maximum length",
+        "ja": "箇条書きの数と各項目の最大の長さを含め、書式を明示する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Format failures are fixed by stating the format, not by re-rolling or upgrading the model\n\n[Supplement] Manually reformatting every response (C) repeats the fix forever instead of stating the requirement once.",
+      "ja": "書式の失敗は、再生成やモデルのアップグレードではなく、書式を明示することで直ります。\n\n【補足】毎回手作業で整形し直す (C) と、要件を一度明示すれば済むところを、いつまでも手で直し続けることになります。"
+    }
+  },
+  {
+    "id": "Q042",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 7,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Which of these is the strongest signal that a Claude-generated claim needs verification before use?",
+      "ja": "Claude が生成した主張について、使う前に検証が必要であることを最も強く示すのはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The claim is a specific number, date, or citation that would matter if wrong",
+        "ja": "その主張が、間違っていたら影響が大きい具体的な数値、日付、引用である"
+      },
+      {
+        "key": "B",
+        "en": "The answer is long",
+        "ja": "回答が長い"
+      },
+      {
+        "key": "C",
+        "en": "The answer was produced quickly",
+        "ja": "回答がすぐに生成された"
+      },
+      {
+        "key": "D",
+        "en": "The answer uses technical vocabulary",
+        "ja": "回答が専門用語を使っている"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Specific, consequential details are the highest-risk surface for fabrication. Length, speed, and vocabulary carry no accuracy signal",
+      "ja": "具体的で影響の大きい詳細は、捏造のリスクが最も高い箇所です。長さ、速さ、語彙は正確さについて何も示しません。"
+    }
+  },
+  {
+    "id": "Q043",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 8,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A manager wants to know whether Claude can \"replace our weekly reporting process.\" What is the most useful response?",
+      "ja": "あるマネージャーが、Claude で「週次レポートのプロセスを置き換えられるか」を知りたがっています。最も役に立つ回答はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Yes, automation is what AI is for",
+        "ja": "はい。自動化こそ AI の役割です"
+      },
+      {
+        "key": "B",
+        "en": "A breakdown of which reporting steps Claude can draft or summarize, which need human judgment or system access, and what the review step would be",
+        "ja": "レポート作成の手順のうち、Claude が下書きや要約をできるもの、人の判断やシステムへのアクセスが必要なものの内訳と、レビューの手順がどうなるかを示す"
+      },
+      {
+        "key": "C",
+        "en": "No, reporting requires human oversight",
+        "ja": "いいえ。レポート作成には人による監督が必要です"
+      },
+      {
+        "key": "D",
+        "en": "A recommendation to hire a consultant",
+        "ja": "コンサルタントを雇うよう勧める"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "The valued skill is a realistic division of labor with a review step, not a yes or a no\n\n[Supplement] Recommending a consultant (D) deflects the question instead of analyzing the process.",
+      "ja": "求められるスキルは、イエスかノーかではなく、レビューの手順を含めた現実的な役割分担を示すことです。\n\n【補足】コンサルタントを勧める (D) のは、プロセスを分析せずに質問をかわしているだけです。"
+    }
+  },
+  {
+    "id": "Q044",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 9,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "You are configuring a Project that several colleagues will use for consistent client communications. What belongs in the Project instructions rather than in each individual prompt?",
+      "ja": "何人かの同僚が、一貫した顧客向けコミュニケーションのために使う Project を設定しています。個々のプロンプトではなく Project の指示に入れるべきものはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The specific client's name for today's message",
+        "ja": "今日のメッセージを送る特定の顧客名"
+      },
+      {
+        "key": "B",
+        "en": "Today's date",
+        "ja": "今日の日付"
+      },
+      {
+        "key": "C",
+        "en": "The house tone, required disclaimers, and the standard structure of a client message",
+        "ja": "社内で決めたトーン、必須の免責事項、顧客向けメッセージの標準的な構成"
+      },
+      {
+        "key": "D",
+        "en": "The colleague's personal writing preferences",
+        "ja": "その同僚個人の文章の好み"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Durable, shared conventions belong in instructions; per-message specifics belong in the prompt\n\n[Supplement] Today's client name (A) and today's date (B) change per message and belong in the prompt, and one colleague's personal preferences (D) would not give shared, consistent communications.",
+      "ja": "継続的で共有されるルールは指示に入れ、メッセージごとに変わる具体的な内容はプロンプトに入れます。\n\n【補足】今日の顧客名 (A) や今日の日付 (B) はメッセージごとに変わるのでプロンプトに入れるものです。同僚1人の個人的な好み (D) では、共有された一貫性のあるコミュニケーションになりません。"
+    }
+  },
+  {
+    "id": "Q045",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 10,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "A summary Claude produced omits a material caveat that appears in the source document. What does this failure mode illustrate?",
+      "ja": "Claude が作成した要約から、原文にある重要な注意事項が抜け落ちています。この失敗のパターンは何を示していますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Hallucination through fabricated detail",
+        "ja": "詳細の捏造によるハルシネーション"
+      },
+      {
+        "key": "B",
+        "en": "A context window limit",
+        "ja": "コンテキストウィンドウの上限"
+      },
+      {
+        "key": "C",
+        "en": "A prompt injection attack",
+        "ja": "プロンプトインジェクション攻撃"
+      },
+      {
+        "key": "D",
+        "en": "Omission, which requires reading the source rather than only reviewing the output",
+        "ja": "漏れ。出力を確認するだけでなく、原文を読む必要がある"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Omission is as damaging as fabrication and is only visible if you read the source, not just the output\n\n[Supplement] Fabrication (A) adds false detail rather than dropping true detail, context window limits (B) are not indicated by the scenario, and prompt injection (C) involves malicious instructions embedded in input.",
+      "ja": "漏れは捏造と同じくらい深刻であり、出力を確認するだけでなく原文を読まなければ気づけません。\n\n【補足】捏造 (A) は正しい詳細を落とすのではなく、誤った詳細を付け加えるものです。コンテキストウィンドウの上限 (B) を示す状況は設問にありません。プロンプトインジェクション (C) は、入力に悪意のある指示が埋め込まれるものです。"
+    }
+  },
+  {
+    "id": "Q046",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 11,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "Your prompt worked well last month and now returns weaker results after your team added twelve documents to the Project's knowledge. What is the first thing to investigate?",
+      "ja": "先月はうまく機能していたプロンプトが、チームが Project のナレッジに12件の文書を追加したあと、以前より弱い結果を返すようになりました。最初に調べるべきことはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Whether the new documents are diluting or contradicting the sources the answers should use",
+        "ja": "新しい文書が、回答に使われるべき情報源を薄めたり、それと矛盾したりしていないか"
+      },
+      {
+        "key": "B",
+        "en": "Whether the model changed",
+        "ja": "モデルが変わったかどうか"
+      },
+      {
+        "key": "C",
+        "en": "Whether colleagues are using different browsers",
+        "ja": "同僚が別のブラウザを使っているかどうか"
+      },
+      {
+        "key": "D",
+        "en": "Whether the prompt should be longer",
+        "ja": "プロンプトを長くすべきかどうか"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Diagnose the change that coincided with the regression before rewriting anything\n\n[Supplement] Model changes (B) and browsers (C) did not coincide with the regression, and a longer prompt (D) changes the system before the cause is known.",
+      "ja": "何かを書き直す前に、品質低下と同時期に起きた変更を診断します。\n\n【補足】モデルの変更 (B) やブラウザ (C) は品質低下と同時期に起きた変更ではありません。プロンプトを長くする (D) のは、原因がわかる前にシステムを変えてしまうことです。"
+    }
+  },
+  {
+    "id": "Q047",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 12,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "For which task is a Project with persistent instructions and knowledge clearly better than a one-off chat?",
+      "ja": "指示とナレッジが保持される Project が、一度きりのチャットより明らかに適しているのはどのタスクですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Asking for a synonym",
+        "ja": "類義語を尋ねる"
+      },
+      {
+        "key": "B",
+        "en": "A monthly report that follows the same structure and draws on the same reference documents",
+        "ja": "毎回同じ構成で、同じ参考資料をもとに作成する月次レポート"
+      },
+      {
+        "key": "C",
+        "en": "Checking a single fact",
+        "ja": "1つの事実を確認する"
+      },
+      {
+        "key": "D",
+        "en": "Rewriting one email",
+        "ja": "メールを1通書き直す"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Repeated work with stable context and structure is exactly what Projects are for\n\n[Supplement] A synonym (A), a single fact check (C), and one email rewrite (D) are one-off tasks with no reusable context to persist.",
+      "ja": "安定したコンテキストと構成で繰り返す作業こそ、Projects の用途です。\n\n【補足】類義語 (A)、1つの事実確認 (C)、メール1通の書き直し (D) は一度きりのタスクであり、保持して再利用するコンテキストがありません。"
+    }
+  },
+  {
+    "id": "Q048",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 13,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Which practice best reduces the risk of sharing an inaccurate Claude output with a customer?",
+      "ja": "Claude の不正確な出力を顧客に共有してしまうリスクを最もよく減らす方法はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Reading the output for tone before sending",
+        "ja": "送る前にトーンの観点で出力を読む"
+      },
+      {
+        "key": "B",
+        "en": "Sending it with a note that AI assisted",
+        "ja": "AI の支援を受けた旨を添えて送る"
+      },
+      {
+        "key": "C",
+        "en": "Verifying the claims that would cause harm if wrong, then having a second person review customer-facing material",
+        "ja": "間違っていたら害が生じる主張を検証し、そのうえで顧客向けの資料は別の人にレビューしてもらう"
+      },
+      {
+        "key": "D",
+        "en": "Using the largest available model",
+        "ja": "利用できる最大のモデルを使う"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Verification of consequential claims plus human review for customer-facing material. Model size is not a control\n\n[Supplement] Checking tone (A) does not check accuracy, and an AI-assistance note (B) does not make the content correct.",
+      "ja": "影響の大きい主張の検証と、顧客向け資料に対する人によるレビューの組み合わせです。モデルの大きさは管理策ではありません。\n\n【補足】トーンの確認 (A) では正確さは確認できず、AI の支援を受けた旨の注記 (B) を付けても内容が正しくなるわけではありません。"
+    }
+  },
+  {
+    "id": "Q049",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 14,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "You want Claude to help redesign a slow approval process rather than just speed up its current steps. Which prompt direction fits that goal?",
+      "ja": "時間のかかる承認プロセスについて、今の手順を速くするだけでなく、プロセス自体の再設計を Claude に手伝ってほしいと考えています。その目的に合うプロンプトの方向性はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "\"Make our approval process faster.\"",
+        "ja": "「承認プロセスを速くして。」"
+      },
+      {
+        "key": "B",
+        "en": "\"Automate our approvals.\"",
+        "ja": "「承認を自動化して。」"
+      },
+      {
+        "key": "C",
+        "en": "\"What do other companies do for approvals?\"",
+        "ja": "「ほかの会社は承認をどうしている？」"
+      },
+      {
+        "key": "D",
+        "en": "\"Here are the current approval steps and where delays occur. Propose two redesigns: one that keeps the current structure and one that reorders or removes steps, with the tradeoffs of each.\"",
+        "ja": "「現在の承認手順と、遅れが生じている箇所は次のとおりです。再設計案を2つ提案してください。1つは現在の構成を維持する案、もう1つは手順を並べ替えたり削除したりする案とし、それぞれのトレードオフも示してください。」"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Process redesign requires giving Claude the current steps, the pain points, and asking for alternatives with tradeoffs\n\n[Supplement] \"Make it faster\" (A) and \"automate\" (B) target the current steps rather than a redesign, and asking about other companies (C) gives Claude none of your process to work with.",
+      "ja": "プロセスの再設計には、現在の手順と問題点を Claude に伝え、トレードオフを含む代替案を求めることが必要です。\n\n【補足】「速くして」(A) や「自動化して」(B) は再設計ではなく現在の手順を対象にしており、ほかの会社について尋ねる (C) と、Claude には自社のプロセスについての情報が何も与えられません。"
+    }
+  },
+  {
+    "id": "Q050",
+    "source": "mock1",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/mock-exam-1.html",
+    "source_number": 15,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Which situation most clearly calls for escalating to a technical colleague rather than solving it yourself?",
+      "ja": "自分で解決するのではなく、技術担当の同僚にエスカレーションすべきことが最も明らかなのはどの状況ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "A request to connect Claude directly to the company's internal order database through an integration",
+        "ja": "連携機能を使って Claude を社内の受注データベースに直接接続したいという依頼"
+      },
+      {
+        "key": "B",
+        "en": "A prompt that needs better structure",
+        "ja": "構成を改善する必要があるプロンプト"
+      },
+      {
+        "key": "C",
+        "en": "An output with the wrong tone",
+        "ja": "トーンが適切でない出力"
+      },
+      {
+        "key": "D",
+        "en": "A Project that needs its knowledge updated",
+        "ja": "ナレッジの更新が必要な Project"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "System integrations belong to the Developer and Architect scope; recognizing that boundary is an Associate competency\n\n[Supplement] Improving prompt structure (B), fixing tone (C), and updating Project knowledge (D) are within an Associate's own scope.",
+      "ja": "システム連携は Developer や Architect の範囲であり、その境界を見極めることは Associate に求められる能力です。\n\n【補足】プロンプトの構成の改善 (B)、トーンの修正 (C)、Project のナレッジの更新 (D) は、Associate 自身の範囲で対応できます。"
+    }
+  }
+]

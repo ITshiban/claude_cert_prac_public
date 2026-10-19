@@ -1,0 +1,1437 @@
+[
+  {
+    "id": "Q001",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 1,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude summarizes a vendor contract for you and states that the termination clause requires 60 days' notice, citing section 14.2. You are about to send the summary to your legal team. What should you do first?",
+      "ja": "Claude が取引先との契約書を要約し、解約条項では60日前の通知が必要だと、第14.2条を引用して述べています。あなたはこの要約を法務チームに送ろうとしています。最初に何をすべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Check section 14.2 of the contract and confirm the notice period before sending",
+        "ja": "送る前に契約書の第14.2条を確認し、通知期間を検証する"
+      },
+      {
+        "key": "B",
+        "en": "Send it, since Claude cited a specific section",
+        "ja": "Claude が具体的な条項を引用しているので、そのまま送る"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude how confident it is and send if the confidence is high",
+        "ja": "Claude に確信度を尋ね、高ければ送る"
+      },
+      {
+        "key": "D",
+        "en": "Rephrase the summary in more formal language, then send",
+        "ja": "要約をよりフォーマルな表現に書き直してから送る"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Specific-looking citations can be fabricated, and material bound for legal review requires verification against the source document. A specific citation is not evidence of accuracy (B), self-reported confidence is not a reliability signal (C), and rewording does nothing about correctness (D).",
+      "ja": "具体的に見える引用も捏造されている可能性があり、法務のレビューに回す資料は原文と照らして検証する必要があります。具体的な引用は正確さの証拠ではなく (B)、自己申告の確信度は信頼性の指標になりません (C)。表現を書き直しても正確さは何も変わりません (D)。"
+    }
+  },
+  {
+    "id": "Q002",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 2,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "You ask Claude to draft a competitive analysis, and the output presents market share figures for three competitors without sources. The figures look plausible. What is the appropriate handling?",
+      "ja": "Claude に競合分析の草案を依頼したところ、出力には競合3社の市場シェアの数値が出典なしで示されていました。数値はもっともらしく見えます。適切な扱い方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Include the figures, since plausibility is sufficient for internal documents",
+        "ja": "社内文書なのでもっともらしければ十分とし、数値をそのまま載せる"
+      },
+      {
+        "key": "B",
+        "en": "Verify each figure against a market research source and keep only what checks out, with citations",
+        "ja": "各数値を市場調査の情報源と照らして検証し、裏付けが取れたものだけを出典付きで残す"
+      },
+      {
+        "key": "C",
+        "en": "Delete the figures and note that no market data was available",
+        "ja": "数値を削除し、市場データは入手できなかったと注記する"
+      },
+      {
+        "key": "D",
+        "en": "Ask Claude to regenerate until the numbers stabilize across runs",
+        "ja": "実行ごとの数値が安定するまで Claude に再生成させる"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Unsourced quantitative claims are a classic hallucination surface; the professional move is verification against an authoritative source, keeping what survives. Plausibility is not accuracy (A), deleting everything discards genuinely verifiable material (C), and consistency across regenerations does not establish truth (D).",
+      "ja": "出典のない数値はハルシネーションが起きやすい典型的な箇所であり、信頼できる情報源と照らして検証し、裏付けが取れたものを残すのが適切な対応です。もっともらしさは正確さではありません (A)。すべて削除すると、本来検証できる情報まで捨てることになります (C)。再生成を繰り返して数値が一致しても、事実であることの証明にはなりません (D)。"
+    }
+  },
+  {
+    "id": "Q003",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 3,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "You need Claude to produce a quarterly report from meeting notes, a spreadsheet summary, and last quarter's report. The first attempt misses the required structure and tone. What is the most effective next step?",
+      "ja": "会議メモ、スプレッドシートの要約、前四半期のレポートをもとに、Claude に四半期レポートを作成させる必要があります。最初の出力は、求められる構成とトーンを満たしていませんでした。最も効果的な次の一手はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Retry the identical prompt, since outputs vary between runs",
+        "ja": "実行ごとに出力は変わるので、同じプロンプトで再試行する"
+      },
+      {
+        "key": "B",
+        "en": "Switch to the most capable model and resend the same prompt",
+        "ja": "最も高性能なモデルに切り替え、同じプロンプトを送り直す"
+      },
+      {
+        "key": "C",
+        "en": "Rewrite the prompt to state the role, the required sections in order, the tone, and attach last quarter's report as a format example",
+        "ja": "役割、必要なセクションとその順序、トーンを明記するようにプロンプトを書き直し、書式の例として前四半期のレポートを添付する"
+      },
+      {
+        "key": "D",
+        "en": "Break the work into forty single-sentence prompts",
+        "ja": "作業を1文ずつの40個のプロンプトに分割する"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Structure, explicit constraints, and an example of the target format are the most effective fixes for a formatting and tone miss. Re-rolling (A) leaves the deficiency in place, a larger model does not learn unstated requirements (B), and over-fragmentation destroys coherence (D).",
+      "ja": "書式やトーンのずれには、構造化、明示的な制約、目標とする書式の例を示すことが最も効果的です。再生成 (A) では不足点が残り、大きいモデルでも明示されていない要件はわかりません (B)。過度な細分化は一貫性を損ないます (D)。"
+    }
+  },
+  {
+    "id": "Q004",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 4,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "A colleague's prompt asks Claude to \"analyze our customer feedback and fix the problems.\" The output is generic. Which revision best applies task decomposition?",
+      "ja": "同僚のプロンプトは Claude に「顧客の声を分析して問題を解決して」と依頼しており、出力はありきたりな内容でした。タスク分解を最もよく適用した修正はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Add \"be specific and detailed\" to the prompt",
+        "ja": "プロンプトに「具体的かつ詳細に」と付け加える"
+      },
+      {
+        "key": "B",
+        "en": "Ask the same question three times and merge the answers",
+        "ja": "同じ質問を3回行い、回答をまとめる"
+      },
+      {
+        "key": "C",
+        "en": "Paste more feedback into the same prompt",
+        "ja": "同じプロンプトにさらに多くのフィードバックを貼り付ける"
+      },
+      {
+        "key": "D",
+        "en": "Ask first for a categorized list of complaint themes with counts, then for the top three by frequency, then for a proposed action per theme",
+        "ja": "まず不満のテーマを件数付きで分類した一覧を求め、次に頻度上位3つを、最後にテーマごとの対応案を求める"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Decomposition turns a vague compound request into a sequence of verifiable steps, each with a concrete output. Vague intensifiers (A) do not add structure, repetition (B) multiplies the vagueness, and more input without more structure (C) usually worsens focus.",
+      "ja": "タスク分解は、あいまいで複合的な依頼を、それぞれ具体的な出力を持つ検証可能なステップの連続に変えます。あいまいな強調語 (A) は構造を加えず、繰り返し (B) はあいまいさを増やすだけです。構造を変えずに入力だけ増やすと (C)、たいてい焦点がぼやけます。"
+    }
+  },
+  {
+    "id": "Q005",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 5,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "Your team drafts hundreds of short, routine customer replies daily, and cost and speed matter more than nuance. Occasionally a complex escalation needs careful reasoning. What is the sound model strategy?",
+      "ja": "あなたのチームは、短く定型的な顧客への返信を毎日何百件も作成しており、細かなニュアンスよりもコストと速度が重要です。ときどき、慎重な推論が必要な複雑なエスカレーション案件があります。妥当なモデル戦略はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Use the most capable model for everything to maximize quality",
+        "ja": "品質を最大化するため、すべてに最も高性能なモデルを使う"
+      },
+      {
+        "key": "B",
+        "en": "Use the fastest, lowest-cost model for routine replies and switch to a more capable model for the complex escalations",
+        "ja": "定型的な返信には最も高速で低コストのモデルを使い、複雑なエスカレーション案件ではより高性能なモデルに切り替える"
+      },
+      {
+        "key": "C",
+        "en": "Use the fastest model for everything, including escalations",
+        "ja": "エスカレーション案件も含め、すべてに最も高速なモデルを使う"
+      },
+      {
+        "key": "D",
+        "en": "Alternate models randomly to balance the load",
+        "ja": "負荷分散のためにモデルをランダムに切り替える"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "**A** wastes cost and latency budget on routine work; **C** underserves exactly the cases that need depth; **D** matches nothing to anything. **B** aligns model choice with task requirements in both directions, which is the tested judgment.",
+      "ja": "**A** は定型業務にコストと応答時間の予算を浪費し、**C** はまさに深い推論が必要な案件で能力が足りず、**D** はどのタスクにもモデルを合わせていません。**B** は両方向でモデルの選択をタスクの要件に合わせており、これが問われている判断です。"
+    }
+  },
+  {
+    "id": "Q006",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 6,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "Your monthly close process involves collecting figures, drafting a variance commentary, and formatting a board pack. You want Claude to help durably, not just once. What is the strongest approach?",
+      "ja": "月次決算のプロセスには、数値の収集、差異についてのコメントの作成、取締役会資料の体裁整えが含まれます。Claude に一度きりではなく継続的に手伝ってもらいたいと考えています。最も効果的なアプローチはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Create a Project with the commentary conventions and prior packs as knowledge, plus instructions for the structure, and run each close inside it",
+        "ja": "コメントの書き方のルールと過去の資料をナレッジとして、構成を指示として設定した Project を作り、毎回の決算をその中で行う"
+      },
+      {
+        "key": "B",
+        "en": "Paste everything into a fresh chat each month and ask for the pack",
+        "ja": "毎月新しいチャットにすべてを貼り付けて資料作成を依頼する"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude to do the whole close autonomously, including pulling the figures",
+        "ja": "数値の取得も含め、決算全体を Claude に自律的に任せる"
+      },
+      {
+        "key": "D",
+        "en": "Use Claude only for spellchecking the final pack",
+        "ja": "Claude は最終資料のスペルチェックだけに使う"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Durable, repeated workflows belong in a Project where instructions and knowledge persist and improve. Re-pasting monthly (B) rebuilds context by hand every time, full autonomy over financial figures without review (C) ignores appropriate-use judgment, and spellchecking (D) forfeits the actual value.",
+      "ja": "継続的に繰り返すワークフローは、指示とナレッジが保持され改善されていく Project で行うのが適切です。毎月貼り付け直す (B) と毎回手作業でコンテキストを作り直すことになり、財務数値をレビューなしで完全に自律化する (C) のは適切な利用の判断を欠いています。スペルチェックだけ (D) では本来の価値を活かせません。"
+    }
+  },
+  {
+    "id": "Q007",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 7,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A department head asks you whether Claude could \"handle our customer onboarding.\" What is the right first move?",
+      "ja": "ある部門長から「Claude で顧客オンボーディングを担当できるか」と聞かれました。最初にとるべき適切な行動はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Say yes and start building immediately",
+        "ja": "できると答えて、すぐに構築を始める"
+      },
+      {
+        "key": "B",
+        "en": "Map the onboarding steps, identify which involve drafting, summarizing, or lookup that Claude does well, and which need human judgment or system access it does not have",
+        "ja": "オンボーディングの手順を洗い出し、Claude が得意な下書き・要約・調べものにあたる手順と、人の判断や Claude が持たないシステムへのアクセスが必要な手順を見極める"
+      },
+      {
+        "key": "C",
+        "en": "Say no, since onboarding involves customer data",
+        "ja": "オンボーディングでは顧客データを扱うので、できないと答える"
+      },
+      {
+        "key": "D",
+        "en": "Forward the question to Anthropic support",
+        "ja": "質問を Anthropic のサポートに転送する"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "The Associate's core skill is translating a business ask into a realistic division of labor: where Claude adds value, where humans stay, and what the limits are. Unqualified yes (A) and unqualified no (C) both skip the analysis, and support (D) does not know your process.",
+      "ja": "Associate に求められる中核的なスキルは、業務上の依頼を現実的な役割分担に落とし込むこと、つまり Claude が価値を出せる部分、人が担う部分、そして限界を見極めることです。無条件のイエス (A) も無条件のノー (C) も分析を飛ばしており、サポート (D) はあなたの業務プロセスを知りません。"
+    }
+  },
+  {
+    "id": "Q008",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 8,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "Your team's Project answers policy questions from an uploaded handbook. HR publishes a new handbook version. What must happen for the Project to stay trustworthy?",
+      "ja": "チームの Project は、アップロードされた従業員ハンドブックをもとに社内規程に関する質問に答えています。人事部がハンドブックの新しい版を公開しました。Project の信頼性を保つために何が必要ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Nothing; Claude will find the new version on its own",
+        "ja": "何もしなくてよい。Claude が新しい版を自分で見つける"
+      },
+      {
+        "key": "B",
+        "en": "Add the new handbook alongside the old one so both are available",
+        "ja": "両方を参照できるよう、古いハンドブックに加えて新しいハンドブックを追加する"
+      },
+      {
+        "key": "C",
+        "en": "Replace the outdated handbook in the Project knowledge and spot-check answers against the new version",
+        "ja": "Project のナレッジにある古いハンドブックを差し替え、新しい版と照らして回答を抜き取りで確認する"
+      },
+      {
+        "key": "D",
+        "en": "Tell users to mention the new version in every prompt",
+        "ja": "毎回のプロンプトで新しい版に言及するようユーザーに伝える"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Project knowledge is maintained, not self-updating; stale sources are a quality defect the configurer owns. Claude does not fetch your internal documents on its own (A), keeping both versions invites contradictory answers (B), and pushing the burden onto every user (D) is not maintenance.",
+      "ja": "Project のナレッジは自動で更新されるものではなく、維持管理が必要です。古い情報源は、設定した人が責任を持つべき品質上の欠陥です。Claude が社内文書を自分で取りに行くことはなく (A)、両方の版を残すと矛盾する回答を招きます (B)。負担をすべてのユーザーに押し付けるのは (D)、維持管理とはいえません。"
+    }
+  },
+  {
+    "id": "Q009",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 9,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "You want Claude to analyze churn patterns in an export that includes customer names, emails, and account numbers. Company policy forbids sharing personal data with external tools. What is the correct action?",
+      "ja": "顧客名、メールアドレス、アカウント番号を含むエクスポートデータを使って、Claude に解約の傾向を分析させたいと考えています。会社のポリシーでは、個人データを外部ツールと共有することが禁止されています。正しい対応はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Upload the file, since churn analysis is an internal purpose",
+        "ja": "解約分析は社内目的なので、ファイルをアップロードする"
+      },
+      {
+        "key": "B",
+        "en": "Upload it but instruct Claude to ignore the personal columns",
+        "ja": "アップロードはするが、個人情報の列は無視するよう Claude に指示する"
+      },
+      {
+        "key": "C",
+        "en": "Abandon the analysis",
+        "ja": "分析を断念する"
+      },
+      {
+        "key": "D",
+        "en": "Remove or pseudonymize the identifying columns first, then upload and analyze",
+        "ja": "まず個人を特定できる列を削除するか仮名化してから、アップロードして分析する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Make the task compliant, then do it: the identifiers are not needed for pattern analysis. Purpose does not override policy (A), an instruction to ignore data is not a control because the data still left the boundary (B), and abandoning the work (C) is unnecessary when anonymization enables it.",
+      "ja": "タスクをポリシーに準拠した形にしてから実行します。傾向の分析に識別子は必要ありません。目的はポリシーに優先しません (A)。データを無視するよう指示しても、データはすでに境界の外に出ているため管理策にはなりません (B)。匿名化すれば実行できるので、作業を断念する必要はありません (C)。"
+    }
+  },
+  {
+    "id": "Q010",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 10,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "A prompt that worked well for weeks now produces off-target answers after your team added many new documents to the Project. What is the best first diagnostic?",
+      "ja": "何週間もうまく機能していたプロンプトが、チームが Project に多数の新しい文書を追加したあと、的外れな回答を返すようになりました。最初に行うべき最善の診断はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Check whether the newly added knowledge is diluting or contradicting the sources the answers should draw from",
+        "ja": "新しく追加したナレッジが、回答の根拠となるべき情報源を薄めたり、それと矛盾したりしていないか確認する"
+      },
+      {
+        "key": "B",
+        "en": "Rewrite the prompt from scratch",
+        "ja": "プロンプトを一から書き直す"
+      },
+      {
+        "key": "C",
+        "en": "Switch to a larger model",
+        "ja": "より大きなモデルに切り替える"
+      },
+      {
+        "key": "D",
+        "en": "Delete the Project and start over",
+        "ja": "Project を削除して最初からやり直す"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "The change that coincided with the regression is the first suspect: new knowledge can crowd out or conflict with the relevant sources. Rewriting the prompt (B), upgrading the model (C), or rebuilding everything (D) all treat symptoms before diagnosing the actual change.",
+      "ja": "品質低下と同時期に起きた変更が、最初に疑うべき対象です。新しいナレッジは、関連する情報源を押しのけたり、それと矛盾したりすることがあります。プロンプトの書き直し (B)、モデルのアップグレード (C)、すべての作り直し (D) は、いずれも実際の変更を診断する前に症状に対処しています。"
+    }
+  },
+  {
+    "id": "Q011",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 11,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude produces a competitor comparison table where one row is marked “data unavailable” and the rest are filled in. A colleague asks you to delete the empty row so the table looks complete. What is the right response?",
+      "ja": "Claude が作成した競合比較表で、1行だけ「data unavailable（データなし）」と記載され、残りは埋まっています。同僚から、表が完成して見えるようにその空の行を削除してほしいと頼まれました。適切な対応はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Delete the row, since an incomplete table undermines confidence",
+        "ja": "不完全な表は信頼を損なうので、行を削除する"
+      },
+      {
+        "key": "B",
+        "en": "Keep the row and its label, because the gap is itself a finding the reader needs",
+        "ja": "その行とラベルを残す。データがないこと自体が、読み手に必要な発見だから"
+      },
+      {
+        "key": "C",
+        "en": "Fill the row with a reasonable estimate and mark it as approximate",
+        "ja": "妥当な推定値で埋め、概算であると明記する"
+      },
+      {
+        "key": "D",
+        "en": "Ask Claude to search harder until every row is populated",
+        "ja": "すべての行が埋まるまで、もっと探すよう Claude に求める"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "A declared gap is information: it tells the reader where the analysis is thin. Deleting it (A) hides a limitation, an unmarked estimate (C) manufactures data, and pressing the model to fill the cell (D) invites fabrication rather than retrieval.",
+      "ja": "明示された欠落は情報であり、分析が手薄な箇所を読み手に伝えます。削除すると (A) 限界を隠すことになり、推定値で埋めると (C) データを作り出すことになります。セルを埋めるようモデルに迫ると (D)、情報の取得ではなく捏造を招きます。"
+    }
+  },
+  {
+    "id": "Q012",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 12,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Two runs of the same prompt give different figures for the same metric. Which conclusion is supported?",
+      "ja": "同じプロンプトを2回実行したところ、同じ指標について異なる数値が出ました。支持できる結論はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The higher figure is more likely correct because the model found more evidence",
+        "ja": "モデルがより多くの根拠を見つけたのだから、大きいほうの数値が正しい可能性が高い"
+      },
+      {
+        "key": "B",
+        "en": "The figures should be averaged to reduce variance",
+        "ja": "ばらつきを減らすため、数値を平均する"
+      },
+      {
+        "key": "C",
+        "en": "Neither figure is established, and the metric must be checked against the source",
+        "ja": "どちらの数値も確定しておらず、その指標は情報源と照らして確認する必要がある"
+      },
+      {
+        "key": "D",
+        "en": "The prompt is fine and the model needs a longer context window",
+        "ja": "プロンプトに問題はなく、モデルにより長いコンテキストウィンドウが必要である"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Disagreement between runs shows the figure is not grounded in a reliable source, so neither is established. Preferring the larger number (A) is arbitrary, averaging (B) treats two unverified numbers as measurements, and context length (D) is unrelated to whether the figure is true.",
+      "ja": "実行間で数値が食い違うのは、その数値が信頼できる情報源に基づいていないことを示しており、どちらも確定とはいえません。大きいほうを選ぶのは (A) 恣意的で、平均する (B) のは検証されていない2つの数値を測定値として扱うことです。コンテキストの長さ (D) は、数値が正しいかどうかとは無関係です。"
+    }
+  },
+  {
+    "id": "Q013",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 13,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "You ask Claude to extract every payment term from a 40-page contract. The output lists four terms, cleanly formatted. What is the first check?",
+      "ja": "40ページの契約書から支払条件をすべて抽出するよう Claude に依頼しました。出力には、きれいに整形された4つの条件が並んでいます。最初に確認すべきことはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Confirm the formatting is consistent across the four entries",
+        "ja": "4つの項目の書式が統一されているか確認する"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude whether it found all of them",
+        "ja": "すべて見つけたかどうかを Claude に尋ねる"
+      },
+      {
+        "key": "C",
+        "en": "Run it again at a higher temperature to surface more terms",
+        "ja": "より多くの条件を拾えるよう、temperature を上げて再実行する"
+      },
+      {
+        "key": "D",
+        "en": "Read the contract's payment sections to confirm no term was omitted",
+        "ja": "契約書の支払いに関する箇所を読み、漏れている条件がないか確認する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Extraction fails by omission more often than by error, and a tidy output gives no signal about completeness. Formatting (A) is cosmetic, self-report (B) is not evidence, and temperature (C) changes phrasing rather than recall.",
+      "ja": "抽出は誤りよりも漏れによって失敗することが多く、整った出力は網羅性について何も示しません。書式 (A) は見た目の問題であり、自己申告 (B) は証拠になりません。temperature (C) は網羅性ではなく言い回しを変えるだけです。"
+    }
+  },
+  {
+    "id": "Q014",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 14,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "A summary you commissioned states a conclusion that contradicts your own reading of the source. What should you do?",
+      "ja": "依頼した要約が、原文についてのあなた自身の読み取りと矛盾する結論を述べています。どうすべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Locate the passage the conclusion rests on and compare it against both readings",
+        "ja": "結論の根拠となっている箇所を見つけ、両方の読み取りと照らし合わせる"
+      },
+      {
+        "key": "B",
+        "en": "Defer to the summary, since the model read the whole document",
+        "ja": "モデルは文書全体を読んでいるので、要約に従う"
+      },
+      {
+        "key": "C",
+        "en": "Defer to your reading and treat the summary as wrong",
+        "ja": "自分の読み取りに従い、要約は誤りとみなす"
+      },
+      {
+        "key": "D",
+        "en": "Ask a colleague which of the two sounds more plausible",
+        "ja": "どちらがもっともらしく聞こえるか同僚に尋ねる"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "The disagreement is resolvable by returning to the passage in question, which settles it on evidence. Deferring either way (B, C) decides without checking, and canvassing opinion (D) substitutes plausibility for the source.",
+      "ja": "この食い違いは、該当箇所に立ち返れば根拠に基づいて解決できます。どちらかに従う (B, C) のは確認せずに決めることであり、意見を集める (D) のは原文の代わりにもっともらしさに頼ることです。"
+    }
+  },
+  {
+    "id": "Q015",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 15,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude produces a well-argued recommendation with no citations, on a topic where you have no expertise. What is the appropriate use of it?",
+      "ja": "あなたに専門知識のない分野について、Claude が引用のない、よく論じられた推奨案を出しました。どのように使うのが適切ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Adopt it, since the reasoning is internally consistent",
+        "ja": "推論に内部的な一貫性があるので、採用する"
+      },
+      {
+        "key": "B",
+        "en": "Treat it as a hypothesis to test against sources before acting",
+        "ja": "行動する前に情報源と照らして検証すべき仮説として扱う"
+      },
+      {
+        "key": "C",
+        "en": "Discard it, because unsourced output has no value",
+        "ja": "出典のない出力には価値がないので、破棄する"
+      },
+      {
+        "key": "D",
+        "en": "Ask for citations and adopt whatever comes back",
+        "ja": "引用を求め、返ってきたものをそのまま採用する"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Unsourced reasoning is a starting point, useful for structuring an enquiry but not for deciding. Internal consistency is not accuracy (A), the reasoning may still be useful (C), and citations produced on demand need the same verification as the claim (D).",
+      "ja": "出典のない推論は出発点であり、調査の枠組みを作るのには役立ちますが、意思決定の根拠にはなりません。内部的な一貫性は正確さではなく (A)、推論自体はなお役に立つ可能性があります (C)。求めに応じて出された引用も、主張と同じく検証が必要です (D)。"
+    }
+  },
+  {
+    "id": "Q016",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 16,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A team wants Claude to draft weekly customer health summaries from support tickets, CRM notes, and usage data. Which design detail matters most for the output to stay useful over months?",
+      "ja": "あるチームが、サポートチケット、CRM のメモ、利用データから、週次の顧客ヘルスサマリーを Claude に作成させたいと考えています。何か月にもわたって出力の有用性を保つうえで、最も重要な設計上のポイントはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Choosing the largest available model",
+        "ja": "利用できる最大のモデルを選ぶ"
+      },
+      {
+        "key": "B",
+        "en": "Running the summary daily instead of weekly",
+        "ja": "週次ではなく毎日サマリーを作成する"
+      },
+      {
+        "key": "C",
+        "en": "Defining what a health summary must contain and keeping that definition in one place the team maintains",
+        "ja": "ヘルスサマリーに含めるべき内容を定義し、その定義をチームが管理する1か所にまとめておく"
+      },
+      {
+        "key": "D",
+        "en": "Letting each team member write their own prompt",
+        "ja": "チームメンバーそれぞれに自分のプロンプトを書かせる"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "A stable, maintained definition of the deliverable is what keeps output consistent as people and inputs change. Model size (A) does not fix an undefined task, higher frequency (B) multiplies an unclear output, and per-person prompts (D) guarantee drift.",
+      "ja": "成果物について安定した、管理された定義があることで、担当者や入力が変わっても出力の一貫性が保たれます。モデルの大きさ (A) では定義されていないタスクは直らず、頻度を上げても (B) 不明確な出力が増えるだけです。人ごとのプロンプト (D) では、出力のばらつきが必ず生じます。"
+    }
+  },
+  {
+    "id": "Q017",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 17,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "Which task in a monthly reporting process is the weakest candidate for delegation to Claude?",
+      "ja": "月次レポート作成プロセスのうち、Claude に任せる候補として最も適していないタスクはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Drafting the narrative summary from agreed figures",
+        "ja": "合意済みの数値から説明文の要約を下書きする"
+      },
+      {
+        "key": "B",
+        "en": "Reformatting last month's report into the new template",
+        "ja": "先月のレポートを新しいテンプレートに整形し直す"
+      },
+      {
+        "key": "C",
+        "en": "Extracting the top five variances from a spreadsheet export",
+        "ja": "スプレッドシートのエクスポートから上位5つの差異を抽出する"
+      },
+      {
+        "key": "D",
+        "en": "Deciding which underperforming account to escalate to the executive team",
+        "ja": "業績不振のどのアカウントを経営陣にエスカレーションするかを決める"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "The escalation decision carries accountability and depends on relationships and context the model does not hold. Drafting (A), reformatting (B), and extraction (C) are all bounded tasks with checkable output.",
+      "ja": "エスカレーションの判断には説明責任が伴い、モデルが持たない人間関係や背景事情に左右されます。下書き (A)、整形 (B)、抽出 (C) は、いずれも範囲が限定され、出力を確認できるタスクです。"
+    }
+  },
+  {
+    "id": "Q018",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 18,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A process works well for one analyst and poorly for three others using the same prompt. What is the most likely cause?",
+      "ja": "あるプロセスは、1人のアナリストではうまくいくのに、同じプロンプトを使うほかの3人ではうまくいきません。最も考えられる原因はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The prompt relies on context the first analyst supplies without noticing",
+        "ja": "最初のアナリストが無意識に補っているコンテキストに、プロンプトが依存している"
+      },
+      {
+        "key": "B",
+        "en": "The other three need a more capable model",
+        "ja": "ほかの3人にはより高性能なモデルが必要である"
+      },
+      {
+        "key": "C",
+        "en": "The task is unsuitable for Claude",
+        "ja": "このタスクは Claude に向いていない"
+      },
+      {
+        "key": "D",
+        "en": "The other three are using shorter inputs",
+        "ja": "ほかの3人は短い入力を使っている"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "One person succeeding with the same prompt usually means they are contributing unstated context, such as knowing which file to attach or what good looks like. A model change (B) does not supply missing context, the task clearly works (C), and input length (D) is a symptom rather than a cause.",
+      "ja": "同じプロンプトで1人だけがうまくいく場合、その人が明示されていないコンテキストを補っていることが多いです。たとえば、どのファイルを添付すべきか、どんな出力が良いかを知っている、といったことです。モデルを変えても (B) 欠けているコンテキストは補われず、タスク自体は明らかに機能しています (C)。入力の長さ (D) は原因ではなく症状です。"
+    }
+  },
+  {
+    "id": "Q019",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 19,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "When is it appropriate to keep a human approval step in an otherwise automated Claude workflow?",
+      "ja": "それ以外は自動化された Claude のワークフローで、人による承認ステップを残すのが適切なのはどのような場合ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Always, since automation is inherently risky",
+        "ja": "自動化には本質的にリスクがあるので、常に残す"
+      },
+      {
+        "key": "B",
+        "en": "When the action is hard to reverse or carries external consequences",
+        "ja": "元に戻しにくい操作や、外部に影響が及ぶ操作の場合"
+      },
+      {
+        "key": "C",
+        "en": "Only while the workflow is new, then remove it",
+        "ja": "ワークフローが新しいうちだけ残し、その後は外す"
+      },
+      {
+        "key": "D",
+        "en": "Never, because approval steps defeat the purpose of automation",
+        "ja": "承認ステップは自動化の目的を損なうので、決して残さない"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Approval earns its cost where a mistake is expensive or hard to undo. Blanket approval (A) and blanket removal (D) both ignore the specific risk, and a time-based rule (C) removes the check regardless of what the action does.",
+      "ja": "承認は、ミスの代償が大きい場合や元に戻しにくい場合にこそ、そのコストに見合います。一律の承認 (A) も一律の撤廃 (D) も個別のリスクを無視しており、期間で決めるルール (C) は操作の内容にかかわらずチェックを外してしまいます。"
+    }
+  },
+  {
+    "id": "Q020",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 20,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "A colleague proposes pasting a customer list into a prompt to draft personalised outreach. What is the correct handling?",
+      "ja": "同僚が、個別化した営業メールを作成するため、顧客リストをプロンプトに貼り付けることを提案しています。正しい扱い方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Proceed, since the prompt is not stored anywhere permanent",
+        "ja": "プロンプトはどこにも恒久的に保存されないので、そのまま進める"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude to keep the names confidential",
+        "ja": "名前を秘密にするよう Claude に依頼する"
+      },
+      {
+        "key": "C",
+        "en": "Remove or replace identifying details before drafting, and reattach them afterwards",
+        "ja": "作成前に個人を特定できる情報を削除または置き換え、作成後に戻す"
+      },
+      {
+        "key": "D",
+        "en": "Proceed but delete the conversation afterwards",
+        "ja": "そのまま進め、あとで会話を削除する"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Working on anonymised data and reattaching identifiers afterwards achieves the task without exposing the personal data. Assumptions about storage (A) are not a control, an instruction to the model (B) is not a safeguard, and deleting afterwards (D) does not undo the disclosure.",
+      "ja": "匿名化したデータで作業し、あとで識別子を戻せば、個人データを外部に出さずにタスクを達成できます。保存についての思い込み (A) は管理策ではなく、モデルへの指示 (B) は安全策になりません。あとで削除しても (D) 開示した事実は取り消せません。"
+    }
+  },
+  {
+    "id": "Q021",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 21,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Which statement about instructing a model not to do something is accurate?",
+      "ja": "モデルに何かをしないよう指示することについて、正しい記述はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "An instruction in the prompt is an enforceable control",
+        "ja": "プロンプト内の指示は、強制力のある管理策である"
+      },
+      {
+        "key": "B",
+        "en": "Instructions are enforceable if placed in a system prompt",
+        "ja": "システムプロンプトに置けば、指示は強制力を持つ"
+      },
+      {
+        "key": "C",
+        "en": "Instructions are enforceable if repeated several times",
+        "ja": "何度も繰り返せば、指示は強制力を持つ"
+      },
+      {
+        "key": "D",
+        "en": "An instruction shapes behavior but does not guarantee it, so controls belong outside the prompt",
+        "ja": "指示は振る舞いに影響を与えるが保証はしないので、管理策はプロンプトの外に置くべきである"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Prompt instructions influence behavior and are not guarantees, so anything that must hold is enforced in the surrounding system. Placement (B) and repetition (C) change the strength of the steer, not its nature, and treating it as enforcement (A) is the error the question tests.",
+      "ja": "プロンプトの指示は振る舞いに影響しますが保証ではないので、必ず守られなければならないことは周囲のシステムで強制します。置き場所 (B) や繰り返し (C) は誘導の強さを変えるだけで、その性質は変わりません。指示を強制とみなすこと (A) こそ、この問題が問うている誤りです。"
+    }
+  },
+  {
+    "id": "Q022",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 22,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "A regulated report drafted with Claude is about to be filed. What is the reviewer accountable for?",
+      "ja": "Claude を使って作成した規制当局向けの報告書を、これから提出しようとしています。レビュー担当者は何に対して説明責任を負いますか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The accuracy and compliance of the filed document, regardless of how it was drafted",
+        "ja": "作成方法にかかわらず、提出する文書の正確性とコンプライアンス"
+      },
+      {
+        "key": "B",
+        "en": "Confirming that Claude was used according to policy",
+        "ja": "Claude がポリシーに沿って使われたことの確認"
+      },
+      {
+        "key": "C",
+        "en": "Confirming the prompt included the relevant regulations",
+        "ja": "プロンプトに関連規制が含まれていたことの確認"
+      },
+      {
+        "key": "D",
+        "en": "Recording which model version produced the draft",
+        "ja": "どのモデルのバージョンが下書きを作成したかの記録"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Accountability sits with the person who files, and the tool used does not transfer it. Policy compliance (B), prompt content (C), and version records (D) are all reasonable practices that do not replace responsibility for the document.",
+      "ja": "説明責任は提出する人にあり、使ったツールに移ることはありません。ポリシーの遵守 (B)、プロンプトの内容 (C)、バージョンの記録 (D) はいずれも妥当な慣行ですが、文書に対する責任の代わりにはなりません。"
+    }
+  },
+  {
+    "id": "Q023",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 23,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "When is disclosing that AI assisted a piece of work most clearly warranted?",
+      "ja": "ある成果物に AI が関わったことを開示すべきなのが最も明確なのは、どのような場合ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Whenever any AI tool touched the work at any stage",
+        "ja": "作業のどの段階であれ、何らかの AI ツールが関わった場合は常に"
+      },
+      {
+        "key": "B",
+        "en": "When the audience's judgment of the work depends on how it was produced",
+        "ja": "成果物に対する受け手の評価が、その作られ方に左右される場合"
+      },
+      {
+        "key": "C",
+        "en": "Only when the output is published externally",
+        "ja": "出力を社外に公開する場合のみ"
+      },
+      {
+        "key": "D",
+        "en": "Only when a written policy requires it",
+        "ja": "書面のポリシーで義務付けられている場合のみ"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Disclosure matters where provenance would change how a reader weighs the work. A universal rule (A) makes the signal meaningless, and confining it to external publication (C) or written policy (D) misses internal cases where it genuinely matters.",
+      "ja": "開示が重要なのは、作られ方によって読み手の評価が変わる場合です。一律のルール (A) では開示の意味が失われ、社外公開 (C) や書面のポリシー (D) に限定すると、社内で本当に重要なケースを見落とします。"
+    }
+  },
+  {
+    "id": "Q024",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 24,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "A prompt produces output that is accurate but consistently too long. What is the most reliable fix?",
+      "ja": "あるプロンプトの出力は正確ですが、いつも長すぎます。最も確実な修正はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Add “be concise” to the prompt",
+        "ja": "プロンプトに「簡潔に」と加える"
+      },
+      {
+        "key": "B",
+        "en": "Ask for a summary of the output afterwards",
+        "ja": "出力のあとで要約を依頼する"
+      },
+      {
+        "key": "C",
+        "en": "State the limit in concrete terms, such as a word count or a number of bullet points",
+        "ja": "単語数や箇条書きの数など、具体的な形で上限を指定する"
+      },
+      {
+        "key": "D",
+        "en": "Use a smaller model",
+        "ja": "より小さなモデルを使う"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Concrete limits are checkable and reproducible in a way that adjectives are not. “Be concise” (A) is interpreted differently each run, summarising afterwards (B) adds a step and a second failure point, and a smaller model (D) trades accuracy for brevity.",
+      "ja": "具体的な上限は、形容詞と違って確認でき、再現性があります。「簡潔に」(A) は実行ごとに解釈が変わり、あとから要約する (B) と手順と失敗箇所が1つずつ増えます。小さなモデル (D) では簡潔さと引き換えに正確さが損なわれます。"
+    }
+  },
+  {
+    "id": "Q025",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 25,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "You need output in a specific structure every time so it can be pasted into a template. What is the most effective technique?",
+      "ja": "テンプレートに貼り付けられるよう、毎回決まった構造で出力してほしいと考えています。最も効果的な手法はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Describing the structure in prose at the end of the prompt",
+        "ja": "プロンプトの最後に構造を文章で説明する"
+      },
+      {
+        "key": "B",
+        "en": "Asking for the output to be well organized",
+        "ja": "出力をよく整理するよう依頼する"
+      },
+      {
+        "key": "C",
+        "en": "Requesting the output twice and taking the better one",
+        "ja": "出力を2回求め、良いほうを採用する"
+      },
+      {
+        "key": "D",
+        "en": "Providing a filled example of the exact structure you want",
+        "ja": "求める構造そのものを、記入済みの例として示す"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "An example specifies the target unambiguously and is the strongest available signal for format. Prose description (A) leaves room for interpretation, a vague request (B) leaves more, and generating twice (C) does not define the target at all.",
+      "ja": "例は目標をあいまいさなく示し、書式を伝えるうえで最も強力な手がかりです。文章での説明 (A) は解釈の余地を残し、あいまいな依頼 (B) はさらに余地を残します。2回生成しても (C) 目標はまったく定義されません。"
+    }
+  },
+  {
+    "id": "Q026",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 26,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "A long prompt with many rules produces output that follows some rules and ignores others. What should you try first?",
+      "ja": "多くのルールを含む長いプロンプトで、出力が一部のルールには従い、ほかのルールは無視しています。最初に何を試すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Separating the task into stages so each output is checked before the next",
+        "ja": "タスクを段階に分け、各段階の出力を確認してから次に進む"
+      },
+      {
+        "key": "B",
+        "en": "Repeating the ignored rules in capitals",
+        "ja": "無視されたルールを大文字で繰り返す"
+      },
+      {
+        "key": "C",
+        "en": "Moving all the rules to the top of the prompt",
+        "ja": "すべてのルールをプロンプトの先頭に移す"
+      },
+      {
+        "key": "D",
+        "en": "Adding a rule that says all rules must be followed",
+        "ja": "すべてのルールに従うようにというルールを加える"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Splitting the work reduces how much must hold at once and gives a checkpoint between stages. Emphasis (B), ordering (C), and a meta-rule (D) all leave the same load in a single step.",
+      "ja": "作業を分割すると、一度に守るべきことが減り、段階の間に確認ポイントができます。強調 (B)、順序の変更 (C)、メタルール (D) は、いずれも1つのステップに同じ負荷を残したままです。"
+    }
+  },
+  {
+    "id": "Q027",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 27,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "Which detail most improves a prompt asking Claude to review a document?",
+      "ja": "Claude に文書のレビューを依頼するプロンプトで、最も改善効果が大きい情報はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Stating that the review should be thorough",
+        "ja": "レビューを徹底的に行うよう明記する"
+      },
+      {
+        "key": "B",
+        "en": "Stating what the review is for and what would count as a problem",
+        "ja": "レビューの目的と、何を問題とみなすかを明記する"
+      },
+      {
+        "key": "C",
+        "en": "Attaching several similar documents for comparison",
+        "ja": "比較用に似た文書をいくつか添付する"
+      },
+      {
+        "key": "D",
+        "en": "Asking for the review as a numbered list",
+        "ja": "レビュー結果を番号付きリストで求める"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Purpose and criteria tell the model what to look for, which is what a review depends on. Thoroughness (A) is unmeasurable, extra documents (C) add noise without criteria, and formatting (D) shapes presentation rather than substance.",
+      "ja": "目的と基準は、モデルに何を探すべきかを伝えるもので、レビューの質はそれで決まります。「徹底的に」(A) は測れず、追加の文書 (C) は基準がなければノイズになるだけです。書式 (D) は中身ではなく見せ方を変えるだけです。"
+    }
+  },
+  {
+    "id": "Q028",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 28,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "A task involves reading a 200-page report once and answering a single question. Which consideration should lead the choice?",
+      "ja": "200ページのレポートを一度読み、1つの質問に答えるタスクがあります。選択の決め手にすべき観点はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The cheapest model available, since the task runs once",
+        "ja": "一度しか実行しないので、利用できる最も安いモデル"
+      },
+      {
+        "key": "B",
+        "en": "Whether the model supports the fastest response time",
+        "ja": "モデルが最速の応答時間に対応しているかどうか"
+      },
+      {
+        "key": "C",
+        "en": "Whether the model can hold and reason over the whole document reliably",
+        "ja": "モデルが文書全体を保持し、それを踏まえて確実に推論できるかどうか"
+      },
+      {
+        "key": "D",
+        "en": "Whether the task can be split across several small models",
+        "ja": "タスクを複数の小さなモデルに分割できるかどうか"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "The binding constraint is reliable comprehension across a long document, which is what the choice must satisfy. Cost (A) and speed (B) matter only among models that can do the task, and splitting (D) risks losing the cross-document reasoning the question needs.",
+      "ja": "制約となるのは長い文書全体を確実に理解できることであり、選択はそれを満たす必要があります。コスト (A) と速度 (B) は、タスクをこなせるモデルの中で比べるときに初めて意味を持ちます。分割 (D) すると、この質問に必要な文書全体にわたる推論が失われるおそれがあります。"
+    }
+  },
+  {
+    "id": "Q029",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 29,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "When does working in a Claude project make more sense than an API integration?",
+      "ja": "API 連携よりも Claude の Project で作業するほうが理にかなうのは、どのような場合ですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "When the volume is high and predictable",
+        "ja": "量が多く、予測できる場合"
+      },
+      {
+        "key": "B",
+        "en": "When the output must be inserted into another system automatically",
+        "ja": "出力を別のシステムに自動で挿入する必要がある場合"
+      },
+      {
+        "key": "C",
+        "en": "When the task must run on a schedule",
+        "ja": "タスクを定期的にスケジュール実行する必要がある場合"
+      },
+      {
+        "key": "D",
+        "en": "When the work is exploratory and done by people rather than systems",
+        "ja": "作業が探索的で、システムではなく人が行う場合"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Projects suit human, iterative work where the context is curated and reused by people. High volume (A), programmatic handoff (B), and scheduling (C) all describe system integration, which is what the API is for.",
+      "ja": "Project は、人が整えて繰り返し使うコンテキストのもとで行う、人による反復的な作業に向いています。大量処理 (A)、プログラムによる受け渡し (B)、スケジュール実行 (C) はいずれもシステム連携の話であり、それこそが API の用途です。"
+    }
+  },
+  {
+    "id": "Q030",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 30,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "A team asks whether to move to a larger model because outputs are inconsistent. What should be established first?",
+      "ja": "出力が安定しないので、より大きなモデルに移行すべきかとチームから相談されました。まず何を確認すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Whether the inconsistency comes from the prompt and the inputs rather than the model",
+        "ja": "不安定さの原因が、モデルではなくプロンプトや入力にあるかどうか"
+      },
+      {
+        "key": "B",
+        "en": "The cost difference between the two models",
+        "ja": "2つのモデルのコストの差"
+      },
+      {
+        "key": "C",
+        "en": "Whether the larger model is available in their region",
+        "ja": "より大きなモデルが自分たちの地域で利用できるかどうか"
+      },
+      {
+        "key": "D",
+        "en": "How much faster the current model is",
+        "ja": "現在のモデルがどれだけ速いか"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Inconsistency usually traces to an underspecified task or variable inputs, which a larger model does not fix. Cost (B), availability (C), and speed (D) are inputs to a decision that has not yet been shown to be the right one.",
+      "ja": "不安定さの原因は、たいていタスクの指定不足や入力のばらつきにあり、大きなモデルでは直りません。コスト (B)、利用可否 (C)、速度 (D) は、まだ正しいと示されていない判断のための材料にすぎません。"
+    }
+  },
+  {
+    "id": "Q031",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 31,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "What belongs in a project's knowledge rather than in individual prompts?",
+      "ja": "個々のプロンプトではなく、Project のナレッジに入れるべきものはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The specific question being asked today",
+        "ja": "今日尋ねる具体的な質問"
+      },
+      {
+        "key": "B",
+        "en": "Material that every conversation in the project should be able to draw on",
+        "ja": "その Project 内のすべての会話で参照できるべき資料"
+      },
+      {
+        "key": "C",
+        "en": "The preferred output length for one report",
+        "ja": "1つのレポートについての希望する出力の長さ"
+      },
+      {
+        "key": "D",
+        "en": "A one-off document being reviewed this week",
+        "ja": "今週レビューする一度きりの文書"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Project knowledge holds what recurs, so each conversation starts from the same base. Today's question (A), a single formatting preference (C), and a one-off document (D) all belong in the prompt that needs them.",
+      "ja": "Project のナレッジには繰り返し使うものを入れ、どの会話も同じ土台から始められるようにします。今日の質問 (A)、1回限りの書式の好み (C)、一度きりの文書 (D) は、それを必要とするプロンプトに入れるべきものです。"
+    }
+  },
+  {
+    "id": "Q032",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 32,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "A project's answers have grown vaguer as more documents were added. What is the likely cause?",
+      "ja": "Project に文書を追加するにつれて、回答があいまいになってきました。考えられる原因はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "The model version changed",
+        "ja": "モデルのバージョンが変わった"
+      },
+      {
+        "key": "B",
+        "en": "The project has too few documents to ground answers",
+        "ja": "Project の文書が少なすぎて、回答の根拠にならない"
+      },
+      {
+        "key": "C",
+        "en": "The knowledge now holds overlapping or outdated material competing with the right sources",
+        "ja": "ナレッジに重複した資料や古い資料が含まれ、正しい情報源と競合している"
+      },
+      {
+        "key": "D",
+        "en": "The prompts have become too specific",
+        "ja": "プロンプトが具体的になりすぎた"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Accumulated, unmaintained knowledge dilutes retrieval, and the symptom is exactly this drift toward vagueness. A version change (A) is unrelated to what was added, and both too few documents (B) and overly specific prompts (D) contradict the described trend.",
+      "ja": "管理されずに蓄積したナレッジは検索の精度を下げ、その症状がまさにこのような回答のあいまい化です。バージョンの変更 (A) は追加した内容とは無関係で、文書が少なすぎる (B) ことも、プロンプトが具体的すぎる (D) ことも、説明された傾向と矛盾します。"
+    }
+  },
+  {
+    "id": "Q033",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 33,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "How should project knowledge be treated as the underlying material changes?",
+      "ja": "元になる資料が変わっていくなかで、Project のナレッジはどのように扱うべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "It updates automatically from the source systems",
+        "ja": "元のシステムから自動で更新される"
+      },
+      {
+        "key": "B",
+        "en": "It only needs review when answers are visibly wrong",
+        "ja": "回答が明らかに間違っているときだけ見直せばよい"
+      },
+      {
+        "key": "C",
+        "en": "It should be rebuilt from scratch each quarter",
+        "ja": "四半期ごとに一から作り直すべきである"
+      },
+      {
+        "key": "D",
+        "en": "It must be maintained deliberately, because it does not update itself",
+        "ja": "自動では更新されないので、意識して維持管理しなければならない"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Project knowledge is a curated copy and stays as accurate as the person maintaining it. It does not sync (A), waiting for visible errors (B) means acting after the damage, and periodic rebuilds (C) are wasteful and still unscheduled against real change.",
+      "ja": "Project のナレッジは整理された写しであり、その正確さは維持管理する人しだいです。自動で同期はされず (A)、目に見える誤りを待つ (B) のは被害が出てから動くことです。定期的な作り直し (C) は無駄が多く、しかも実際の変更とは無関係なタイミングで行われます。"
+    }
+  },
+  {
+    "id": "Q034",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 34,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "A workflow that has run reliably for months begins returning off-target output. What is the first diagnostic step?",
+      "ja": "何か月も安定して動いていたワークフローが、的外れな出力を返すようになりました。最初の診断ステップはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Establish what changed: the inputs, the configuration, or the knowledge",
+        "ja": "入力、設定、ナレッジのうち何が変わったのかを特定する"
+      },
+      {
+        "key": "B",
+        "en": "Rewrite the prompt from scratch",
+        "ja": "プロンプトを一から書き直す"
+      },
+      {
+        "key": "C",
+        "en": "Switch to a different model",
+        "ja": "別のモデルに切り替える"
+      },
+      {
+        "key": "D",
+        "en": "Increase the amount of context supplied",
+        "ja": "与えるコンテキストの量を増やす"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "A working system that degrades points to a change, and identifying it is faster and safer than rebuilding. Rewriting (B), switching models (C), and adding context (D) all alter the system before the cause is known.",
+      "ja": "機能していたシステムの品質が落ちたなら何かが変わったはずであり、それを特定するほうが作り直すよりも速く安全です。書き直し (B)、モデルの切り替え (C)、コンテキストの追加 (D) は、いずれも原因がわかる前にシステムを変えてしまいます。"
+    }
+  },
+  {
+    "id": "Q035",
+    "source": "practice",
+    "source_url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/associate-foundations/practice-questions.html",
+    "source_number": 35,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "Output quality is acceptable but the process takes too long to be worth using. What should be examined first?",
+      "ja": "出力の品質は許容範囲ですが、プロセスに時間がかかりすぎて使う価値がありません。最初に何を検討すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Whether a faster model would meet the quality bar",
+        "ja": "より速いモデルで品質の基準を満たせるかどうか"
+      },
+      {
+        "key": "B",
+        "en": "Whether the slow part is the model or the human steps around it",
+        "ja": "遅いのはモデルなのか、その前後の人による作業なのか"
+      },
+      {
+        "key": "C",
+        "en": "Whether the prompt can be shortened",
+        "ja": "プロンプトを短くできるかどうか"
+      },
+      {
+        "key": "D",
+        "en": "Whether the task should be abandoned",
+        "ja": "タスクをやめるべきかどうか"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Locating the actual delay comes before optimising anything, and in practice the surrounding steps often dominate. Changing the model (A) or the prompt (C) assumes the model is the bottleneck, and abandoning (D) discards a process that already produces acceptable output.",
+      "ja": "何かを最適化する前に、実際の遅れがどこにあるかを突き止めます。実際には、前後の作業のほうが時間を占めていることが多いものです。モデル (A) やプロンプト (C) を変えるのはモデルがボトルネックだと決めつけることであり、やめてしまう (D) と、すでに許容できる出力を出しているプロセスを捨てることになります。"
+    }
+  }
+]

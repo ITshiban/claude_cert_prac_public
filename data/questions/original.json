@@ -1,0 +1,827 @@
+[
+  {
+    "id": "Q081",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "Your marketing team asks Claude for campaign ideas for a product launch. The first prompt asked for \"the best campaign idea,\" and the result was a single safe concept similar to last year's. Which prompt change best fits a brainstorming task?",
+      "ja": "マーケティングチームが、製品発表のキャンペーン案を Claude に求めています。最初のプロンプトでは「最良のキャンペーン案」を求めたところ、昨年とよく似た無難な案が1つだけ返ってきました。ブレインストーミングのタスクに最も合うプロンプトの変更はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Ask Claude to compare its ideas internally and return only the single strongest one, with a detailed justification for the team",
+        "ja": "Claude に案を内部で比較させ、最も有力な1案だけを、チーム向けの詳しい根拠を添えて返すよう求める"
+      },
+      {
+        "key": "B",
+        "en": "Ask for a wide range of distinct ideas without ranking them, then evaluate a shortlist in a separate step",
+        "ja": "順位を付けずに方向性の異なる案を幅広く出させ、候補を絞った評価は別の段階で行う"
+      },
+      {
+        "key": "C",
+        "en": "Provide last year's campaign as an example to follow closely",
+        "ja": "昨年のキャンペーンを、忠実に従うべき例として示す"
+      },
+      {
+        "key": "D",
+        "en": "Set a strict word limit so Claude has to be more creative",
+        "ja": "より創造的になるよう、厳しい語数制限を設ける"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Brainstorming benefits from generating many varied options before judging them, and asking for \"the best\" forces the output to converge too early. A more careful pick (A) still converges on one idea, using last year's campaign as a model (C) anchors the output to what already exists, and a word limit (D) constrains length rather than widening the range of ideas.",
+      "ja": "ブレインストーミングでは、評価する前に多様な案を数多く出すことが効果的であり、「最良の案」を求めると出力が早い段階で1つに絞られてしまいます。より慎重に選ばせても (A) 1つの案に絞られることに変わりはなく、昨年のキャンペーンを手本にすると (C) 出力が既存のものに引きずられます。語数制限 (D) は長さを制約するだけで、案の幅を広げません。"
+    }
+  },
+  {
+    "id": "Q082",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 1,
+    "type": "single",
+    "question": {
+      "en": "You ask Claude to research why customer churn rose last quarter, using three attached reports. You will present the findings to leadership and need to know which points are backed by the reports. Which instruction best fits this research task?",
+      "ja": "添付した3つのレポートを使って、前四半期に顧客の解約が増えた理由を調べるよう Claude に依頼します。結果は経営陣に報告する予定で、どの点がレポートに裏付けられているかを把握する必要があります。この調査タスクに最も合う指示はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Ask for a confident, persuasive narrative that leadership can act on, written as a single story without hedging or caveats",
+        "ja": "経営陣がすぐ動けるよう、留保や注意書きを付けない一続きの、自信のある説得力のあるストーリーを求める"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude to keep the answer short so it is easier to check",
+        "ja": "確認しやすいよう、回答を短くするよう求める"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude to use its general knowledge to fill any gaps in the reports",
+        "ja": "レポートで足りない部分は、Claude の一般的な知識で補うよう求める"
+      },
+      {
+        "key": "D",
+        "en": "Ask Claude to separate what the reports state, with a reference to each report, from its own inferences",
+        "ja": "レポートに書かれている内容（どのレポートかを示したうえで）と、Claude 自身の推論を分けて書くよう求める"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "In research tasks, separating sourced findings from inference shows what can be presented as evidence and what still needs support. A persuasive narrative (A) blurs that line, brevity (B) does not show where claims come from, and filling gaps with general knowledge (C) mixes unsourced material into findings you will present as backed by the reports.",
+      "ja": "調査タスクでは、情報源に基づく内容と推論を分けることで、何を根拠として示せるか、何にまだ裏付けが必要かがわかります。説得力のあるストーリー (A) はその境界をあいまいにし、短さ (B) は主張の出どころを示しません。一般的な知識で補う (C) と、レポートに裏付けられたものとして報告する内容に、出典のない情報が混ざります。"
+    }
+  },
+  {
+    "id": "Q083",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 2,
+    "type": "multiple",
+    "question": {
+      "en": "A hiring manager asks Claude to summarize interview notes for five candidates. In the summary, candidates from one university are described with words like \"sharp\" and \"driven,\" while others with similar notes are described as \"adequate.\" Which two actions are appropriate before the summary is used? (Choose two.)",
+      "ja": "採用担当のマネージャーが、候補者5人の面接メモを要約するよう Claude に依頼しました。要約では、ある大学出身の候補者は「頭の切れる」「意欲的な」といった言葉で表現され、同じような内容のメモがあるほかの候補者は「標準的」と表現されています。要約を使う前に行うべき適切な対応はどれですか。（2つ選べ）"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Compare each candidate's summary against the original interview notes to check whether the wording reflects the evidence",
+        "ja": "各候補者の要約を元の面接メモと比べ、表現が根拠に見合っているか確認する"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude whether its summary contains any bias and rely on its answer",
+        "ja": "要約に偏りがあるかを Claude に尋ね、その回答に従う"
+      },
+      {
+        "key": "C",
+        "en": "Revise the request so every candidate is summarized against the same explicit criteria, without school names",
+        "ja": "全候補者を同じ明示的な基準で要約し、出身校の名前を含めないよう依頼を見直す"
+      },
+      {
+        "key": "D",
+        "en": "Keep the summary, since the interview notes were written by people, not by Claude",
+        "ja": "面接メモは Claude ではなく人が書いたものなので、要約をそのまま使う"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "explanation": {
+      "en": "Uneven language for similar evidence is a sign of bias, so the summary must be checked against the source notes (A) and the request restructured so every candidate is judged on the same criteria, with irrelevant attributes removed (C). Self-assessment (B) is not an independent check, and the fact that people wrote the notes (D) does not mean the summary represents them fairly.",
+      "ja": "同じような根拠に対して表現が偏っているのはバイアスの兆候なので、要約を元のメモと照らして確認し (A)、無関係な属性を除いて全候補者を同じ基準で評価するよう依頼を組み立て直します (C)。自己評価 (B) は独立した確認ではなく、メモを人が書いたからといって (D)、要約がそれを公平に反映しているとはいえません。"
+    }
+  },
+  {
+    "id": "Q084",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude drafts a quarterly sales summary. The text says regional sales grew 12% overall, but the table in the same document shows figures that add up to a 7% increase. What should you do?",
+      "ja": "Claude が四半期の売上サマリーを下書きしました。本文には地域の売上が全体で12%伸びたとありますが、同じ文書内の表の数値を合計すると7%の増加になります。どうすべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Keep the text, since a written statement is more deliberate than a table",
+        "ja": "文章のほうが表より意図して書かれているので、本文を採用する"
+      },
+      {
+        "key": "B",
+        "en": "Keep the table, since numbers in a table are more reliable than prose",
+        "ja": "表の数値のほうが文章より信頼できるので、表を採用する"
+      },
+      {
+        "key": "C",
+        "en": "Treat both as unverified and recalculate the figure from the source sales data",
+        "ja": "どちらも未検証とみなし、元の売上データから数値を計算し直す"
+      },
+      {
+        "key": "D",
+        "en": "Ask Claude to review both the text and the table and correct whichever one it thinks is wrong so that they match",
+        "ja": "本文と表の両方を見直し、誤っていると判断したほうを修正して一致させるよう Claude に求める"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "An internal contradiction shows that at least one figure is wrong, and only the source data can tell you which. Preferring the text (A) or the table (B) picks a side without evidence, and asking Claude to reconcile them (D) can simply align both to the wrong number.",
+      "ja": "文書内の矛盾は少なくとも一方の数値が誤っていることを示しており、どちらが誤りかは元のデータでしか判断できません。本文 (A) や表 (B) を優先するのは根拠なくどちらかに決めることであり、Claude に整合させる (D) と、両方が誤った数値にそろうだけかもしれません。"
+    }
+  },
+  {
+    "id": "Q085",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "You need Claude to extract product names, prices, and stock levels from supplier emails so the results can be imported into your inventory spreadsheet. Which output format should you request?",
+      "ja": "仕入先からのメールから、製品名、価格、在庫数を Claude に抽出させ、その結果を在庫管理のスプレッドシートに取り込む必要があります。どの出力形式を求めるべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Structured data with fixed field names, such as a table or CSV with one row per product",
+        "ja": "項目名を固定した構造化データ（1製品1行の表や CSV など）"
+      },
+      {
+        "key": "B",
+        "en": "A well-written paragraph summarizing each supplier's offer",
+        "ja": "仕入先ごとの提案をまとめた、読みやすい文章"
+      },
+      {
+        "key": "C",
+        "en": "A bulleted list grouped by supplier, with each product's name, price, and stock level written into the text of the bullet",
+        "ja": "仕入先ごとにまとめ、各製品の名前、価格、在庫数を項目の文中に書き込んだ箇条書き"
+      },
+      {
+        "key": "D",
+        "en": "Whatever format Claude judges most readable",
+        "ja": "Claude が最も読みやすいと判断した形式"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Output that will be imported into another tool needs a consistent, machine-readable structure. Paragraphs (B) and bulleted lists (C) must be reworked by hand before import, and leaving the choice to Claude (D) can produce a different format each time.",
+      "ja": "別のツールに取り込む出力には、一貫した機械可読の構造が必要です。文章 (B) や箇条書き (C) は取り込む前に手作業で整え直す必要があり、形式を Claude に任せる (D) と毎回違う形式になるおそれがあります。"
+    }
+  },
+  {
+    "id": "Q086",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 2,
+    "type": "single",
+    "question": {
+      "en": "Claude helped you write a technical assessment of a new vendor platform. You now need a one-page version for executives. The original notes that the vendor's uptime figures apply only to its premium tier. How should you adapt the content?",
+      "ja": "Claude の助けを借りて、新しいベンダーのプラットフォームについての技術評価を書きました。今度は経営陣向けに1ページ版が必要です。元の評価には、ベンダーの稼働率の数値は上位プランにのみ当てはまると書かれています。内容をどのように調整すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Remove technical caveats, since executives only need the conclusion",
+        "ja": "経営陣に必要なのは結論だけなので、技術的な注意事項は削除する"
+      },
+      {
+        "key": "B",
+        "en": "Keep the full technical document unchanged and add a short executive summary at the end so that no detail is lost",
+        "ja": "細部が失われないよう、技術文書はそのまま残し、末尾に経営陣向けの短い要約を加える"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude to make the tone more positive so the recommendation is clear",
+        "ja": "推奨が明確になるよう、トーンをより前向きにするよう Claude に求める"
+      },
+      {
+        "key": "D",
+        "en": "Simplify the language and length, but keep material conditions such as the premium-tier limitation",
+        "ja": "表現と長さは簡潔にするが、上位プランに限るといった重要な条件は残す"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Adapting for an audience changes language, length, and emphasis, but conditions that affect the decision must survive. Dropping caveats (A) misleads decision-makers, keeping the full document (B) does not produce a one-page version, and a more positive tone (C) changes the substance rather than the presentation.",
+      "ja": "読み手に合わせた調整では表現、長さ、強調点を変えますが、判断に影響する条件は残さなければなりません。注意事項を削除する (A) と意思決定者を誤らせ、文書をすべて残す (B) のでは1ページ版になりません。トーンを前向きにする (C) のは、見せ方ではなく中身を変えることです。"
+    }
+  },
+  {
+    "id": "Q087",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "Over dozens of messages in one long conversation, you have refined a project plan with Claude. Recently Claude's answers have started ignoring constraints you agreed on early in the conversation. What is the most effective next step?",
+      "ja": "1つの長い会話の中で、何十ものメッセージをやり取りしながら Claude とプロジェクト計画を練り上げてきました。最近、会話の初めのほうで合意した制約を無視した回答が返ってくるようになりました。最も効果的な次の一手はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Keep going in the same conversation, and each time a constraint is ignored, restate it and ask Claude to apply it from now on",
+        "ja": "同じ会話を続け、制約が無視されるたびにそれを言い直して、以後は守るよう Claude に求める"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude to summarize the agreed decisions and constraints, check that summary, and start a new conversation with it",
+        "ja": "合意した決定事項と制約を Claude に要約させ、その要約を確認したうえで、それをもとに新しい会話を始める"
+      },
+      {
+        "key": "C",
+        "en": "Switch to a more capable model within the same conversation",
+        "ja": "同じ会話のまま、より高性能なモデルに切り替える"
+      },
+      {
+        "key": "D",
+        "en": "Shorten your future messages so the conversation grows more slowly",
+        "ja": "会話が長くなりすぎないよう、今後のメッセージを短くする"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "As a conversation grows, early details compete with a large volume of later text. Carrying a reviewed summary into a fresh conversation keeps what matters and drops the noise. Repeating corrections (A) treats the symptom, a different model (C) still works from the same overloaded conversation, and shorter messages (D) do nothing about the context already built up.",
+      "ja": "会話が長くなると、初めのほうの詳細は後から増えた大量のテキストと競合するようになります。確認済みの要約を新しい会話に引き継げば、重要な点を残して雑多な情報を外せます。訂正の繰り返し (A) は症状への対処にすぎず、モデルを変えても (C) 同じ肥大化した会話をもとに動くことに変わりはありません。メッセージを短くしても (D)、すでに積み上がったコンテキストには何の効果もありません。"
+    }
+  },
+  {
+    "id": "Q088",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "You need an overview of recent regulatory changes affecting your industry in several countries, with sources you can check. Which approach best fits this need?",
+      "ja": "複数の国で自社の業界に影響する最近の規制変更について、確認できる情報源付きの概要が必要です。このニーズに最も合う方法はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Ask a quick question in a regular chat and rely on the model's built-in knowledge, since regulations rarely change within a year",
+        "ja": "規制は1年以内にはめったに変わらないので、通常のチャットで簡単に質問し、モデルがもともと持つ知識に頼る"
+      },
+      {
+        "key": "B",
+        "en": "Upload last year's internal regulatory memo to a Project and ask Claude to update it",
+        "ja": "昨年の社内の規制メモを Project にアップロードし、Claude に更新させる"
+      },
+      {
+        "key": "C",
+        "en": "Use Claude's research capability to gather and cite multiple current sources, then check the key sources yourself",
+        "ja": "Claude の Research を使って最新の情報源を複数集めて引用させ、主要な情報源は自分で確認する"
+      },
+      {
+        "key": "D",
+        "en": "Use the smallest model to keep the cost of the many searches down",
+        "ja": "多数の検索にかかるコストを抑えるため、最も小さなモデルを使う"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "The question needs current information from many sources with citations to check, which is what research mode is for, and the key sources still need your own review. Built-in knowledge (A) may be out of date and gives you nothing to check, last year's memo (B) does not contain the recent changes, and choosing by cost (D) ignores what the task requires.",
+      "ja": "この問いには、確認できる引用を伴う、多数の情報源からの最新の情報が必要であり、それこそが Research の用途です。ただし主要な情報源は自分でも確認します。モデルがもともと持つ知識 (A) は古い可能性があり、確認できるものも示されません。昨年のメモ (B) には最近の変更が含まれておらず、コストで選ぶ (D) のはタスクに必要なものを無視しています。"
+    }
+  },
+  {
+    "id": "Q089",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 3,
+    "type": "single",
+    "question": {
+      "en": "You are working with Claude on a customer onboarding checklist that you will revise several times and then share with your team as a standalone document. Which way of working fits best?",
+      "ja": "Claude と一緒に顧客オンボーディングのチェックリストを作っています。何度か修正したうえで、独立した文書としてチームに共有する予定です。最も適した進め方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Have Claude create it as an artifact, so the document can be revised and reused separately from the conversation",
+        "ja": "会話とは別に修正・再利用できるよう、Artifacts として作成させる"
+      },
+      {
+        "key": "B",
+        "en": "Ask for the checklist inline in a new chat each time you want a change",
+        "ja": "変更したいたびに、新しいチャットで本文中にチェックリストを出させる"
+      },
+      {
+        "key": "C",
+        "en": "Have Claude rewrite the whole checklist from scratch after every change request, so each version reflects all feedback so far",
+        "ja": "各版にそれまでの意見がすべて反映されるよう、変更を依頼するたびにチェックリスト全体を一から書き直させる"
+      },
+      {
+        "key": "D",
+        "en": "Ask for the checklist as one long paragraph so it is easy to copy",
+        "ja": "コピーしやすいよう、チェックリストを1つの長い段落で出させる"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Artifacts suit substantial, standalone content that you revise and reuse outside the conversation. Starting a new chat each time (B) loses earlier revisions, rewriting from scratch (C) invites unintended changes to parts already approved, and a single paragraph (D) does not suit a checklist people will work through.",
+      "ja": "Artifacts は、会話の外で修正・再利用する、まとまった独立したコンテンツに向いています。毎回新しいチャットを始める (B) とそれまでの修正が失われ、一から書き直させる (C) と、すでに承認した部分に意図しない変更が入るおそれがあります。1つの段落 (D) は、人が順に確認していくチェックリストには向きません。"
+    }
+  },
+  {
+    "id": "Q090",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "A department sends a one-paragraph request for a \"dashboard that shows how the team is doing.\" You plan to use Claude to help design a solution. What is the best first use of Claude?",
+      "ja": "ある部署から「チームの状況がわかるダッシュボード」がほしいという、1段落だけの依頼が届きました。Claude を使って解決策の設計を進める予定です。最初の Claude の使い方として最も適切なのはどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Ask Claude to design the full dashboard right away, with charts and metrics, so the department has a concrete draft to react to",
+        "ja": "部署が意見を言える具体的な案になるよう、グラフや指標も含めたダッシュボード全体をすぐに設計させる"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude which dashboard software is the most popular",
+        "ja": "どのダッシュボードソフトが最も人気かを尋ねる"
+      },
+      {
+        "key": "C",
+        "en": "Ask Claude to estimate how long the build will take",
+        "ja": "構築にかかる期間を見積もらせる"
+      },
+      {
+        "key": "D",
+        "en": "Ask Claude to list the ambiguities and open questions in the request, then confirm the answers with the department",
+        "ja": "依頼のあいまいな点や未確定の点を洗い出させ、その答えを部署に確認する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Requirements analysis comes before design: clarifying what \"how the team is doing\" means, for whom, and from which data prevents building the wrong thing. A full design now (A) builds on guesses, popularity (B) says nothing about this team's needs, and an estimate (C) is meaningless before the scope is known.",
+      "ja": "設計の前に要件分析が来ます。「チームの状況」が何を意味し、誰のためのもので、どのデータに基づくのかを明らかにすれば、間違ったものを作るのを防げます。いま全体を設計する (A) と推測の上に作ることになり、人気 (B) はこのチームのニーズについて何も示しません。範囲がわかる前の見積もり (C) には意味がありません。"
+    }
+  },
+  {
+    "id": "Q091",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 4,
+    "type": "multiple",
+    "question": {
+      "en": "An executive says that once Claude drafts the monthly client reports, the team can stop reviewing them and reassign the reviewers. Which two points should you communicate? (Choose two.)",
+      "ja": "ある役員が、Claude が月次の顧客向けレポートを下書きするようになれば、チームはレビューをやめて、レビュー担当者を別の仕事に回せると言っています。伝えるべき点はどれですか。（2つ選べ）"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Claude's outputs are always accurate if the prompt is well written, so review can be reduced over time",
+        "ja": "プロンプトがよく書かれていれば Claude の出力は常に正確なので、レビューは徐々に減らせる"
+      },
+      {
+        "key": "B",
+        "en": "Claude can speed up drafting substantially, which is where the time savings come from",
+        "ja": "Claude は下書きを大幅に速くでき、時間の節約はそこから生まれる"
+      },
+      {
+        "key": "C",
+        "en": "Claude should not be used for client reports at all",
+        "ja": "顧客向けレポートに Claude を使うべきではない"
+      },
+      {
+        "key": "D",
+        "en": "Claude can produce plausible but incorrect content, so a review step for client-facing reports should remain",
+        "ja": "Claude はもっともらしいが誤った内容を出力することがあるので、顧客向けレポートのレビューは残すべきである"
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ],
+    "explanation": {
+      "en": "Communicating value and limits means being specific about both: the gain is faster drafting (B), and the limit is that plausible errors still occur, so client-facing material keeps a review step (D). Claiming accuracy from a good prompt (A) overstates the tool, and ruling it out entirely (C) discards a real benefit.",
+      "ja": "価値と限界を伝えるとは、その両方を具体的に示すことです。得られるのは下書きの高速化であり (B)、限界はもっともらしい誤りがなお起こることなので、顧客向けの資料にはレビューを残します (D)。良いプロンプトなら正確だと主張する (A) のはツールを過大評価しており、使わないと決める (C) と実際にある利点を捨てることになります。"
+    }
+  },
+  {
+    "id": "Q092",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 4,
+    "type": "single",
+    "question": {
+      "en": "You used Claude to draft a rollout plan for a new expense system, including task durations and dependencies between teams. The plan looks complete and well organized. What should happen before it is shared as the official schedule?",
+      "ja": "Claude を使って、新しい経費システムの導入計画を下書きしました。各タスクの所要期間やチーム間の依存関係も含まれています。計画は網羅的でよく整理されているように見えます。正式なスケジュールとして共有する前に、何をすべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Share it as is, since Claude laid out the durations and the dependencies between teams in a clear and logical order",
+        "ja": "Claude が所要期間とチーム間の依存関係を明確かつ論理的な順序で整理しているので、そのまま共有する"
+      },
+      {
+        "key": "B",
+        "en": "Ask Claude to double-check the durations and dependencies",
+        "ja": "所要期間と依存関係を再確認するよう Claude に求める"
+      },
+      {
+        "key": "C",
+        "en": "Have the teams responsible for each task confirm the durations and dependencies",
+        "ja": "各タスクを担当するチームに、所要期間と依存関係を確認してもらう"
+      },
+      {
+        "key": "D",
+        "en": "Add 20% to every duration as a buffer and share it",
+        "ja": "すべての所要期間に20%のバッファを加えて共有する"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Claude can structure a plan, but durations and cross-team dependencies depend on facts that only the owning teams know. A logical structure (A) is not evidence that the estimates are right, a self-check (B) is not independent, and a blanket buffer (D) hides errors instead of finding them.",
+      "ja": "Claude は計画を構造化できますが、所要期間やチーム間の依存関係は、担当チームしか知らない事実に左右されます。論理的な構成 (A) は見積もりが正しい証拠ではなく、自己チェック (B) は独立していません。一律のバッファ (D) は誤りを見つけるのではなく、覆い隠してしまいます。"
+    }
+  },
+  {
+    "id": "Q093",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "Your team wants Claude to answer questions using documents stored in a shared Google Drive. The drive also contains HR files and contracts unrelated to the team's work. How should the connection be set up?",
+      "ja": "チームは、共有の Google Drive に保存された文書を使って Claude に質問に答えさせたいと考えています。そのドライブには、チームの業務と関係のない人事ファイルや契約書も入っています。接続はどのように設定すべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Connect the entire drive so Claude never misses a relevant document",
+        "ja": "関連する文書を見落とさないよう、ドライブ全体を接続する"
+      },
+      {
+        "key": "B",
+        "en": "Give access only to the folders the team's work actually requires",
+        "ja": "チームの業務に実際に必要なフォルダだけにアクセスを与える"
+      },
+      {
+        "key": "C",
+        "en": "Connect the entire drive and instruct Claude not to read HR files or contracts",
+        "ja": "ドライブ全体を接続し、人事ファイルや契約書は読まないよう Claude に指示する"
+      },
+      {
+        "key": "D",
+        "en": "Avoid connectors and email the documents to each team member instead",
+        "ja": "Connectors は使わず、代わりに文書を各メンバーにメールで送る"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Access should match the need: limiting what is connected keeps unrelated and sensitive content out of reach. Connecting everything (A) exposes data the task does not require, an instruction to ignore files (C) is not a control, and abandoning the connector (D) gives up the benefit instead of configuring it properly.",
+      "ja": "アクセスは必要な範囲に合わせるべきです。接続する範囲を絞れば、無関係な情報や機密性の高い情報に手が届かないようにできます。すべてを接続する (A) とタスクに不要なデータまでさらすことになり、ファイルを無視するよう指示しても (C) 管理策にはなりません。Connectors をやめる (D) のは、適切に設定する代わりに利点を手放すことです。"
+    }
+  },
+  {
+    "id": "Q094",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 5,
+    "type": "single",
+    "question": {
+      "en": "Your team's Project instructions say client emails must open with a formal greeting, but last month the team agreed to use a shorter, informal style. Team members now add \"ignore the greeting rule\" to each prompt. What is the best fix?",
+      "ja": "チームの Project の指示には、顧客へのメールは改まった挨拶で始めると書かれていますが、チームは先月、もっと短く砕けたスタイルにすることで合意しました。いまはメンバーが毎回プロンプトに「挨拶のルールは無視して」と付け加えています。最も適切な修正はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Update the Project instructions to the new style and assign someone to keep them current when conventions change",
+        "ja": "Project の指示を新しいスタイルに更新し、ルールが変わったときに指示を最新に保つ担当者を決める"
+      },
+      {
+        "key": "B",
+        "en": "Keep the workaround, since it produces the right result",
+        "ja": "正しい結果が出ているので、今の回避策を続ける"
+      },
+      {
+        "key": "C",
+        "en": "Add the new style rule to the instructions while keeping the old one, so both are available",
+        "ja": "どちらも使えるよう、古いルールを残したまま新しいスタイルのルールを指示に追加する"
+      },
+      {
+        "key": "D",
+        "en": "Ask each team member to create their own Project with their preferred style",
+        "ja": "メンバーそれぞれに、好みのスタイルで自分用の Project を作ってもらう"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "explanation": {
+      "en": "Instructions should reflect current conventions, and someone needs to own keeping them current. Per-prompt workarounds (B) are easy to forget and inconsistent, conflicting rules side by side (C) produce unpredictable output, and separate Projects (D) break the shared configuration the team relies on.",
+      "ja": "指示は現在のルールを反映しているべきであり、それを最新に保つ責任者が必要です。プロンプトごとの回避策 (B) は忘れやすく一貫しません。矛盾するルールを並べる (C) と出力が予測できなくなり、別々の Project (D) ではチームが頼りにしている共通の設定が崩れます。"
+    }
+  },
+  {
+    "id": "Q095",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 6,
+    "type": "multiple",
+    "question": {
+      "en": "An HR team proposes having Claude rank job applicants and automatically reject the bottom half without anyone reading those applications. Why is this an inappropriate use? (Choose two.)",
+      "ja": "人事チームが、Claude に応募者を順位付けさせ、下位半分は誰も応募書類を読まずに自動で不採用にすることを提案しています。これが不適切な使い方である理由はどれですか。（2つ選べ）"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "A decision with significant impact on individuals would be made without human judgment or accountability",
+        "ja": "個人に大きな影響を与える判断が、人の判断や説明責任なしに行われることになる"
+      },
+      {
+        "key": "B",
+        "en": "Claude cannot read résumés in common file formats",
+        "ja": "Claude は一般的なファイル形式の履歴書を読めない"
+      },
+      {
+        "key": "C",
+        "en": "Ranking applicants takes Claude too long to be practical",
+        "ja": "応募者の順位付けは Claude には時間がかかりすぎて実用的でない"
+      },
+      {
+        "key": "D",
+        "en": "Bias in the model or in the criteria could unfairly exclude candidates, and nobody would be in a position to notice",
+        "ja": "モデルや基準の偏りによって候補者が不当に除外されるおそれがあり、しかもそれに気づける人がいない"
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ],
+    "explanation": {
+      "en": "Hiring decisions significantly affect people, so they need human judgment and an accountable decision-maker (A), and fully automated rejection lets bias go undetected because no one reviews the excluded applications (D). The concern is not file formats (B) or speed (C); Claude can assist with screening, but not as an unreviewed final decision-maker.",
+      "ja": "採用の判断は人に大きな影響を与えるため、人の判断と説明責任を負う意思決定者が必要です (A)。また、完全に自動化された不採用では、除外された応募書類を誰も見ないため、偏りが見過ごされます (D)。問題はファイル形式 (B) や速度 (C) ではありません。Claude は選考を補助できますが、レビューのない最終判断者にはなりません。"
+    }
+  },
+  {
+    "id": "Q096",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Your company provides an approved Claude workspace for company data. A colleague finds it faster to paste internal financial data into a personal AI account on their phone. What is the correct response?",
+      "ja": "あなたの会社は、社内データを扱うための承認済みの Claude 環境を用意しています。同僚は、自分のスマートフォンにある個人の AI アカウントに社内の財務データを貼り付けるほうが速いと考えています。正しい対応はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Allow it, since the colleague is working on company business",
+        "ja": "同僚は会社の業務をしているのだから、認める"
+      },
+      {
+        "key": "B",
+        "en": "Allow it, as long as the colleague deletes the conversation from the personal account as soon as the work is finished",
+        "ja": "作業が終わったらすぐに個人アカウントから会話を削除するのであれば、認める"
+      },
+      {
+        "key": "C",
+        "en": "Use the approved workspace for company data, as organizational policy requires",
+        "ja": "組織のポリシーに従い、社内データには承認済みの環境を使う"
+      },
+      {
+        "key": "D",
+        "en": "Allow it for small amounts of data only",
+        "ja": "少量のデータに限り、認める"
+      }
+    ],
+    "answer": [
+      "C"
+    ],
+    "explanation": {
+      "en": "Organizational AI policy defines which tools may handle company data, and the approved workspace exists for exactly that purpose. Doing company business (A) does not make an unapproved tool acceptable, deleting afterwards (B) does not undo the disclosure, and a size threshold (D) has no basis in the policy.",
+      "ja": "どのツールで社内データを扱ってよいかは組織の AI ポリシーが定めており、承認済みの環境はまさにそのためにあります。会社の業務であること (A) は未承認のツールを使ってよい理由にならず、あとで削除しても (B) 開示した事実は取り消せません。データ量の基準 (D) はポリシーに根拠がありません。"
+    }
+  },
+  {
+    "id": "Q097",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 6,
+    "type": "multiple",
+    "question": {
+      "en": "A marketing manager asks you to use Claude to write twenty customer testimonials for a new product page, attributed to made-up customer names. Which two responses are appropriate? (Choose two.)",
+      "ja": "マーケティングマネージャーから、新製品のページに載せる顧客の推薦文を Claude で20件作成し、架空の顧客名を付けるよう頼まれました。適切な対応はどれですか。（2つ選べ）"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Write them, since the product is genuinely good",
+        "ja": "製品が本当に良いものなので、作成する"
+      },
+      {
+        "key": "B",
+        "en": "Decline to present invented content as real customer testimonials",
+        "ja": "作り話を実際の顧客の推薦文として示すことは断る"
+      },
+      {
+        "key": "C",
+        "en": "Offer alternatives, such as collecting real customer feedback or writing clearly labeled example copy",
+        "ja": "実際の顧客の声を集める、例文であることを明示した文案を作るなど、代わりの方法を提案する"
+      },
+      {
+        "key": "D",
+        "en": "Write them, but use fewer than twenty so they look more natural",
+        "ja": "作成するが、自然に見えるよう20件より少なくする"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "explanation": {
+      "en": "Presenting fabricated testimonials as real misleads customers and is an unethical use regardless of product quality (B), and a useful response also offers honest ways to meet the goal (C). Product quality (A) does not justify deception, and fewer fake testimonials (D) are still fake.",
+      "ja": "捏造した推薦文を本物として示すことは、製品の品質にかかわらず顧客を欺く非倫理的な使い方です (B)。また、目的を誠実に達成する方法も提案するのが役に立つ対応です (C)。製品の品質 (A) は欺くことの正当化にならず、件数を減らしても (D) 偽物であることに変わりはありません。"
+    }
+  },
+  {
+    "id": "Q098",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 6,
+    "type": "single",
+    "question": {
+      "en": "Your company has signed a non-disclosure agreement with a partner. You want Claude to summarize the partner's confidential technical proposal for an internal meeting. What should you do first?",
+      "ja": "あなたの会社は、ある取引先と秘密保持契約（NDA）を結んでいます。社内会議のために、その取引先の機密の技術提案書を Claude に要約させたいと考えています。最初に何をすべきですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Upload it, since the summary will only be used internally",
+        "ja": "要約は社内でしか使わないので、アップロードする"
+      },
+      {
+        "key": "B",
+        "en": "Upload it and ask Claude to keep the content confidential",
+        "ja": "アップロードし、内容を秘密にするよう Claude に依頼する"
+      },
+      {
+        "key": "C",
+        "en": "Upload only the pages you consider most important",
+        "ja": "最も重要だと思うページだけをアップロードする"
+      },
+      {
+        "key": "D",
+        "en": "Check whether the NDA and your organization's AI policy permit processing the document with Claude",
+        "ja": "NDA と組織の AI ポリシーで、その文書を Claude で処理することが認められているか確認する"
+      }
+    ],
+    "answer": [
+      "D"
+    ],
+    "explanation": {
+      "en": "Confidential third-party material is governed by the agreement and your organization's policy, so permission must be confirmed before anything is uploaded. Internal use (A) does not change what the NDA allows, an instruction to the model (B) is not a safeguard, and uploading part of it (C) still shares confidential content.",
+      "ja": "第三者の機密資料は、契約と組織のポリシーに従って扱う必要があるため、何かをアップロードする前に認められているかを確認します。社内での利用であること (A) は NDA で認められる範囲を変えず、モデルへの指示 (B) は安全策になりません。一部だけアップロードしても (C)、機密の内容を共有することに変わりはありません。"
+    }
+  },
+  {
+    "id": "Q099",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 7,
+    "type": "multiple",
+    "question": {
+      "en": "Users of a Claude workflow that drafts product descriptions say the outputs feel \"generic.\" Which two steps are the most useful responses to this feedback? (Choose two.)",
+      "ja": "製品説明を下書きする Claude のワークフローについて、利用者から出力が「ありきたり」だという声が上がっています。このフィードバックへの対応として最も役に立つ手順はどれですか。（2つ選べ）"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Switch to the most capable model and wait for further feedback",
+        "ja": "最も高性能なモデルに切り替え、さらなるフィードバックを待つ"
+      },
+      {
+        "key": "B",
+        "en": "Ask users to rate each output from 1 to 5 without further detail",
+        "ja": "詳しい説明なしで、各出力を1〜5で評価するよう利用者に頼む"
+      },
+      {
+        "key": "C",
+        "en": "Collect specific examples of outputs users found generic and identify what they have in common",
+        "ja": "利用者がありきたりだと感じた出力の具体例を集め、共通する点を特定する"
+      },
+      {
+        "key": "D",
+        "en": "Add the missing specifics to the prompt, such as the target customer, key differentiators, and an example of a strong description",
+        "ja": "対象顧客、主な差別化ポイント、優れた説明文の例など、不足している具体的な情報をプロンプトに加える"
+      }
+    ],
+    "answer": [
+      "C",
+      "D"
+    ],
+    "explanation": {
+      "en": "Vague feedback becomes actionable once you find the pattern in concrete examples (C), and the usual fix for generic output is giving the prompt the specifics it lacks (D). A model change (A) does not supply missing information, and bare scores (B) show that something is wrong without showing what.",
+      "ja": "あいまいなフィードバックも、具体例から傾向を見つければ対処できるものになります (C)。ありきたりな出力への一般的な対処は、プロンプトに不足している具体的な情報を与えることです (D)。モデルを変えても (A) 不足している情報は補われず、点数だけ (B) では何かがおかしいことはわかっても、何がおかしいのかはわかりません。"
+    }
+  },
+  {
+    "id": "Q100",
+    "source": "original",
+    "source_url": null,
+    "source_number": null,
+    "domain": 7,
+    "type": "single",
+    "question": {
+      "en": "You are improving a prompt that produces inconsistent meeting summaries. You plan to rewrite the instructions, add an example, and change the output format. Which approach makes it easiest to learn what actually helps?",
+      "ja": "一貫しない議事要約を出力するプロンプトを改善しています。指示の書き直し、例の追加、出力形式の変更を予定しています。実際に何が効いたのかを最も把握しやすい進め方はどれですか。"
+    },
+    "choices": [
+      {
+        "key": "A",
+        "en": "Make all three changes at once to save time",
+        "ja": "時間を節約するため、3つの変更を一度に行う"
+      },
+      {
+        "key": "B",
+        "en": "Change one element at a time and compare the results on the same set of test inputs",
+        "ja": "一度に1つの要素だけを変え、同じテスト用の入力で結果を比較する"
+      },
+      {
+        "key": "C",
+        "en": "Make the changes and test each one on a different meeting transcript",
+        "ja": "変更を行い、それぞれを別の会議の記録で試す"
+      },
+      {
+        "key": "D",
+        "en": "Make the changes and ask colleagues which version they prefer, without a fixed test set",
+        "ja": "変更を行い、決まったテスト用の入力を使わずに、どの版が良いかを同僚に尋ねる"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "explanation": {
+      "en": "Changing one variable at a time against a fixed set of inputs shows which change caused which effect. Changing everything at once (A) hides what helped, different test inputs (C) mix input variation with prompt changes, and unstructured preferences (D) give no consistent basis for comparison.",
+      "ja": "決まった入力に対して一度に1つの要素だけを変えれば、どの変更がどの効果をもたらしたかがわかります。すべてを一度に変える (A) と何が効いたのかわからず、テスト用の入力を変える (C) と入力のばらつきとプロンプトの変更が混ざります。決まった基準のない好み (D) では、一貫した比較ができません。"
+    }
+  }
+]
